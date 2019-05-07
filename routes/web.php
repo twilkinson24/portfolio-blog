@@ -24,7 +24,9 @@ Route::get('/blog', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
-/* ADMIN & ARTICLE ROUTES
+
+
+//ADMIN & ARTICLE ROUTES
 Route::group(['middleware' => ['auth', 'admin'], 'prefix' => 'admin'], 
             function() {
                 // Route admin
@@ -60,5 +62,3 @@ Route::group(['middleware' => ['auth', 'admin'], 'prefix' => 'admin'],
                 // delete article
                 Route::get('/articles/destroy/{id}', ['uses' => 'ArticleController@destroy', 'as' => 'articles.destroy']);  
             });
-
-*/
