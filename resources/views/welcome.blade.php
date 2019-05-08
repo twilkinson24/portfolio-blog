@@ -5,67 +5,50 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bethany Bootstrap Theme</title>
-  <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
-  <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+  <title>TW - Web Dev</title>
+  <meta name="description" content="Taylor Wilkinson is an aspiring web developer">
+  <meta name="keywords" content="web developer portfolio, web developer, css, JavaScript, React, ReactJS, Front-End Web Development, PHP, Laravel">
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700,300|Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="css/animate.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <!-- =======================================================
-    Theme Name: Bethany
-    Theme URL: https://bootstrapmade.com/bethany-free-onepage-bootstrap-theme/
-    Author: BootstrapMade.com
-    Author URL: https://bootstrapmade.com
-  ======================================================= -->
-</head>
 
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="/css/main.css">
+
+  <link rel="icon" href="./favicon.ico"> <!-- TAB ICON -->
+
+  
+
+</head>
 <body>
   <!--header-->
-  <header class="main-header" id="header">
-    <div class="bg-color">
-      <!--nav-->
-      <nav class="nav navbar-default navbar-fixed-top">
-        <div class="container">
-          <div class="col-md-12">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mynavbar" aria-expanded="false" aria-controls="navbar">
-                            <span class="fa fa-bars"></span>
-                        </button>
-              <a href="index.html" class="navbar-brand">Bethany</a>
-            </div>
-            <div class="collapse navbar-collapse navbar-right" id="mynavbar">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="#header">Home</a></li>
-                <li><a href="#feature">Feature</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
-      <!--/ nav-->
-      <div class="container text-center">
-        <div class="wrapper wow fadeInUp delay-05s">
-          <h2 class="top-title">Web Design & Development</h2>
-          <h3 class="title">Bethany</h3>
-          <h4 class="sub-title">We Create amazing designs</h4>
-          <button type="submit" class="btn btn-submit">Download Now</button>
-        </div>
-      </div>
-    </div>
+  <header class="bg-dark text-light">
+    <nav class="container d-flex justify-content-between">
+      <div class="menu-site-name"><h3>TW</h3></div>
+      
+      <ul class="nav-links d-flex">
+        <li class="nav-link">
+          <a href="#">Projects</a>
+        </li>
+        <li class="nav-link">
+          <a href="#">About Me</a>
+        </li>
+        <li class="nav-link">
+          <a href="#">Blog</a>
+        </li>
+        <li class="nav-link">
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+    </nav>
   </header>
-  <!--/ header-->
- <!---->
-  <!--contact ends-->
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery.easing.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/wow.js"></script>
-  <script src="js/custom.js"></script>
-  <script src="contactform/contactform.js"></script>
+    <!--/ header-->
+  
 
+
+
+
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 </body>
 </html>
