@@ -67,6 +67,20 @@
      </ul>
     </div>
   </section>
+  <section class="my-tools">
+    <div class="container">
+      <!-- make this like the Bethany Features Section -->
+      <div class="row">
+        <div class="col-sm-3 border">
+          hi
+        </div>
+        <div class="col-sm-9 border">
+            hi
+          </div>
+      </div>
+      
+    </div>
+  </section>
   
 
 
