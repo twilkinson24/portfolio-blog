@@ -24,7 +24,7 @@
   <!--header-->
   <header class="text-light">
     <nav class="shadow py-2">
-      <div class="container d-flex justify-content-between">
+      <div class="container d-flex justify-content-between" id="nav-flex">
         <div class="menu-site-name"><h3>TW</h3></div>
         <ul class="nav-links d-flex">
           <li>
@@ -44,7 +44,7 @@
     </nav>
   </header>
   <!--/ header-->
-  <section class="jumbotron rounded-0 mb-0 text-center">
+  <section class="jumbotron rounded-0 mb-0 text-center text-custom-dark">
     <div class="container">
       <h1 class="jumbotron-heading">Taylor Wilkinson</h1>
       <p class="lead">Michigander and passionate web developer looking for opportunities to gain experience and collaborate with awesome people.</p>
@@ -54,16 +54,16 @@
       </p>
       <ul class="jumbotron-social-icons d-flex justify-content-around mx-auto">
           <li>
-               <a href="https://github.com/coding4tacos/" class="text-light" target="_blank"><i class="fab fa-github"></i> </a>
+               <a href="https://github.com/coding4tacos/" class="text-custom-dark" target="_blank"><i class="fab fa-github"></i> </a>
           </li>
           <li>
-               <a href="https://twitter.com/coding4tacos/" class="text-light" target="_blank"> <i class="fab fa-twitter"></i> </a>
+               <a href="https://twitter.com/coding4tacos/" class="text-custom-dark" target="_blank"> <i class="fab fa-twitter"></i> </a>
           </li>
           <li>
-               <a href="https://codepen.io/coding4tacos/" class="text-light" target="_blank"> <i class="fab fa-codepen"></i> </a>
+               <a href="https://codepen.io/coding4tacos/" class="text-custom-dark" target="_blank"> <i class="fab fa-codepen"></i> </a>
           </li>
           <li>
-               <a href="https://www.linkedin.com/in/taylor-wilkinson-a6478229/"  class="text-light" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+               <a href="https://www.linkedin.com/in/taylor-wilkinson-a6478229/"  class="text-custom-dark" target="_blank"><i class="fab fa-linkedin-in"></i></a>
           </li>
      </ul>
     </div>
