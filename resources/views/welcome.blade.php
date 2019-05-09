@@ -44,41 +44,63 @@
     </nav>
   </header>
   <!--/ header-->
-  <section class="jumbotron text-center">
+  <section class="jumbotron rounded-0 mb-0 text-center">
     <div class="container">
       <h1 class="jumbotron-heading">Taylor Wilkinson</h1>
-      <p class="lead text-muted">Michigander and passionate web developer looking for opportunities to gain experience and collaborate with awesome people.</p>
+      <p class="lead">Michigander and passionate web developer looking for opportunities to gain experience and collaborate with awesome people.</p>
       <p>
-        <a href="/contact" class="btn btn-primary my-2">Get In Touch</a>
+        <a href="#" class="btn btn-custom text-custom-dark border my-2">My Work</a>
+        <a href="/contact" class="btn btn-custom text-custom-dark border my-2">Get In Touch</a>
       </p>
       <ul class="jumbotron-social-icons d-flex justify-content-around mx-auto">
           <li>
-               <a href="https://github.com/coding4tacos/" class="text-custom-dark" target="_blank"><i class="fab fa-github"></i> </a>
+               <a href="https://github.com/coding4tacos/" class="text-light" target="_blank"><i class="fab fa-github"></i> </a>
           </li>
           <li>
-               <a href="https://twitter.com/coding4tacos/" class="text-custom-dark" target="_blank"> <i class="fab fa-twitter"></i> </a>
+               <a href="https://twitter.com/coding4tacos/" class="text-light" target="_blank"> <i class="fab fa-twitter"></i> </a>
           </li>
           <li>
-               <a href="https://codepen.io/coding4tacos/" class="text-custom-dark" target="_blank"> <i class="fab fa-codepen"></i> </a>
+               <a href="https://codepen.io/coding4tacos/" class="text-light" target="_blank"> <i class="fab fa-codepen"></i> </a>
           </li>
           <li>
-               <a href="https://www.linkedin.com/in/taylor-wilkinson-a6478229/"  class="text-custom-dark" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+               <a href="https://www.linkedin.com/in/taylor-wilkinson-a6478229/"  class="text-light" target="_blank"><i class="fab fa-linkedin-in"></i></a>
           </li>
      </ul>
     </div>
   </section>
-  <section class="my-tools">
+
+  <section class="my-tools bg-light">
     <div class="container">
       <!-- make this like the Bethany Features Section -->
       <div class="row">
-        <div class="col-sm-3 border">
-          hi
+        <!-- New Card -->
+        <div class="col-md-4">
+          <p class="lead">Front-End</p>
+          <p>HTML5, CSS3, Bootstrap</p>
+          <p>JavaScript, jQuery, React</p>
+          <p class="lead">Back-End</p>
+          <p>PHP, Laravel</p>
         </div>
-        <div class="col-sm-9 border">
-            hi
+        <!-- New Card -->
+        <div class="col-md-4">
+            <p class="lead">CMS</p>
+            <p>WordPress</p>
+            <p class="lead">Version Control</p>
+            <p>Git, GitHub</p>
           </div>
+          <!-- New Card -->
+          <div class="col-md-4">
+            <p class="lead">Code Editor</p>
+            <p>VS Code (normally)</p>
+            <p class="lead">Other</p>
+            <p>Command Line, NPM, Composer</p>
+          </div>
+      </div> <!-- End row -->
+      <div class="down-icon text-center">
+        <a href="#">
+          <i class="fas fa-caret-down bg-white border text-custom-dark p-4 rounded-circle"></i>
+        </a>
       </div>
-      
     </div>
   </section>
   

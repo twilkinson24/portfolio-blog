@@ -13,7 +13,12 @@ class UserController extends Controller {
      $this->middleware('auth');
      }
     public function index() {
-
+        try {
+            $records = User::orderBy('id', 'desc')->paginate(3);
+            return view('admin/users/index', ['users' => $records]);
+        } catch(\Exception $e) {
+            return view('admin/index');
+        }
      }
     public function create() {
 

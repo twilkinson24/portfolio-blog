@@ -3,9 +3,17 @@ html, body {
      margin: 0;
 }
 
+section {
+     padding: 2rem 0;
+}
+
 ul {
      padding: 0;
      margin: 0;
+}
+
+img {
+     max-width: 100%;
 }
 
 nav {
@@ -81,10 +89,24 @@ nav ul li a:hover:after {
      transform: translateY(0px);
 }
 
+
+.jumbotron {
+     min-height: 50vh;
+     background-image: linear-gradient(to top left, rgba(0, 47, 255, .5), rgba(0, 47, 255, .5)),
+     url(/img/lake-mismall.jpg);
+     background-size: cover;
+     background-position: center center;
+     color: #fff;
+}
+
 .jumbotron ul.jumbotron-social-icons {
      list-style-type: none;
      max-width: 600px;
      font-size: 1.5rem;
+}
+
+i.caret-down {
+     padding: 1rem;
 }
 
 
@@ -106,4 +128,13 @@ nav ul li a:hover:after {
 .btn-primary {
      background-color: rgb(2, 9, 66);
      background-image: linear-gradient(to top left, rgb(2, 9, 66), rgb(0, 47, 255));
+}
+
+.btn-custom {
+     min-width: 200px;
+     background-color: rgba(255, 255, 255, .9);
+}
+
+.btn-custom:hover {
+     background-color: #fff;
 }
