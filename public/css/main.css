@@ -27,6 +27,7 @@ nav h3 {
      margin: 0;
 
 }
+
 @media only screen and (max-width: 768px) {
      nav #nav-flex {
           flex-direction: column;
@@ -36,10 +37,23 @@ nav h3 {
           text-align: center;
      }
 
+     #desktop-site-name {
+          display: none;
+     }
+
      nav ul.nav-links {
           justify-content: center;
      }
 }
+
+@media only screen and (min-width: 769px) {
+     #mobile-site-name {
+          display: none;
+     }
+}
+
+
+
 nav ul {
      margin: 0;
      padding: 0;

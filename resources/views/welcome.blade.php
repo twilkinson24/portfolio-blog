@@ -25,7 +25,8 @@
   <header class="text-light">
     <nav class="shadow py-2">
       <div class="container d-flex justify-content-between" id="nav-flex">
-        <div class="menu-site-name"><h3>TW</h3></div>
+        <div class="menu-site-name" id="desktop-site-name"><h3>TW</h3></div>
+        <div class="menu-site-name" id="mobile-site-name"><h3>Taylor Wilkinson</h3></div>
         <ul class="nav-links d-flex">
           <li>
             <a href="#" class="nav-link">Projects</a>
