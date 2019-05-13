@@ -68,43 +68,132 @@
           </li>
      </ul>
     </div>
-    <div class="down-icon text-center">
+    <div class="down-icon rounded text-center">
       <a href="#">
-        <i class="fas fa-caret-down bg-white border text-custom-dark p-4 rounded-circle"></i>
+        <i class="fas fa-caret-down p-3 rounded-circle border border-dark"></i>
       </a>
     </div>
   </section>
-  
 
-  <section class="my-tools">
+  <section class="projects bg-light">
+    <div class="text-center">
+      <h3 class="py-3">Some of my recent projects</h3>
+    </div>
     <div class="container">
-      <!-- make this like the Bethany Features Section -->
       <div class="row d-flex justify-content-center text-center">
         <!-- New Card -->
-        <div class="col-md-3 card shadow">
-          <p class="lead">Front-End</p>
-          <p>HTML5, CSS3, Bootstrap</p>
-          <p>JavaScript, jQuery, React</p>
-          <p class="lead">Back-End</p>
-          <p>PHP, Laravel</p>
+        <div class="col-md-3 card shadow">      
+          <a href="#" data-toggle="modal" data-target="#exampleModal1">
+          <img class="project-pic" src="/img/recipes.png" alt="share recipes project">
+          <h3 class="project-name">Share Recipes</h3>
+          </a> 
+
         </div>
-        <!-- New Card -->
-        <div class="col-md-3 card shadow">
-            <p class="lead">CMS</p>
-            <p>WordPress</p>
-            <p class="lead">Version Control</p>
-            <p>Git, GitHub</p>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Share Recipes</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-5 d-flex justify-content-center flex-column">
+                      <img class="project-pic" src="/img/recipes.png" alt="share recipes project">
+                    </div>
+                    <div class="col-md-7">
+                      <p class="project-modal-desc text-left">
+                        A web app for people who want to share recipes. The main purpose of this project was to better understand MVC and improve my PHP skills.
+                      </p>
+                      <p class="tech-used-modal text-left">
+                        <span class="font-weight-bold">Tools:</span> PHP
+                      </p>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
           </div>
+
+          <!-- New Card -->
+        <div class="col-md-3 card shadow">
+
+          
+            <a href="#" data-toggle="modal" data-target="#exampleModal2">
+            <img class="project-pic" src="/img/weatherwatcher.png" alt="weather watcher project">
+            <h3 class="project-name">Weather Watcher</h3>
+            </a> 
+  
+          </div>
+  
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Weather Watcher</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-5 d-flex justify-content-center flex-column">
+                        <img class="project-pic" src="/img/weatherwatcher.png" alt="share recipes project">
+                      </div>
+                      <div class="col-md-7">
+                        <p class="project-modal-desc text-left">
+                            A front-end web app for checking the weather. This was one of my first React projects built from scratch. The app gets data from the <a href="https://openweathermap.org/" target="_blank">Open Weather Map API</a>.
+                        </p>
+                        <p class="tech-used-modal text-left">
+                          <span class="font-weight-bold">Tools:</span> JavaScript, React
+                        </p>
+                      </div>
+                    </div>
+  
+                  </div>
+                  <div class="modal-footer">
+                    <a href="https://coding4tacos.github.io/" class="btn btn-primary" target="_blank">See it in action!</a>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
           <!-- New Card -->
           <div class="col-md-3 card shadow">
-            <p class="lead">Code Editor</p>
-            <p>VS Code (normally)</p>
-            <p class="lead">Other</p>
-            <p>Command Line, NPM, Composer</p>
+            
           </div>
       </div> <!-- End row -->
     </div>
   </section>
+  <!-- ABOUT ME -->
+  <section class="about-me">
+      <div class="container">
+          <div class="text-center">
+              <h3 class="py-3"><i class="fas fa-user"></i></h3>
+          </div>
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-2">
+            <img src="img/avatar.jpg"  class="rounded py-2" alt="Taylor Wilkinson - Web Developer">
+          </div>
+          <div class="col-md-8 d-flex justify-content-center flex-column">
+            <p class="lead">A little more about Taylor Wilkinson</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quidem laudantium ab error tempore fuga dicta labore reprehenderit, eius et earum, inventore quasi iusto eaque molestiae ad sapiente laborum sint.</p>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  
   
 
 
@@ -115,6 +204,7 @@
 
   <!-- Scripts -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -142,10 +142,32 @@ nav ul li a:hover:after {
      text-align: center;
 }
 
-/* Skills section */
+/* Projects Section */
+section.projects {
+     padding: 5rem 0;
+}
+
+.projects .col-md-3 {
+     padding: 0;
+     position: relative;
+}
+
+.projects h3.project-name {
+     position: absolute;
+     bottom: 0;
+     text-align: center;
+     width: 100%;
+     background-color: rgba(247, 239, 239, 0.5);
+     margin: 0;
+     padding: .3rem 0;
+}
+
 .card {
      margin: 0 1rem;
 }
+
+/* About Me Section */
+
 
 /* Footer */
 footer {
