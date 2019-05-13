@@ -45,7 +45,7 @@
     </nav>
   </header>
   <!--/ header-->
-  <section class="jumbotron rounded-0 mb-0 text-center text-custom-dark">
+  <section class="jumbotron rounded-0 mb-0 text-center">
     <div class="container">
       <h1 class="jumbotron-heading">Taylor Wilkinson</h1>
       <p class="lead">Michigander and passionate web developer looking for opportunities to gain experience and collaborate with awesome people.</p>
@@ -68,14 +68,20 @@
           </li>
      </ul>
     </div>
+    <div class="down-icon text-center">
+      <a href="#">
+        <i class="fas fa-caret-down bg-white border text-custom-dark p-4 rounded-circle"></i>
+      </a>
+    </div>
   </section>
+  
 
-  <section class="my-tools bg-light">
+  <section class="my-tools">
     <div class="container">
       <!-- make this like the Bethany Features Section -->
-      <div class="row">
+      <div class="row d-flex justify-content-center text-center">
         <!-- New Card -->
-        <div class="col-md-4">
+        <div class="col-md-3 card shadow">
           <p class="lead">Front-End</p>
           <p>HTML5, CSS3, Bootstrap</p>
           <p>JavaScript, jQuery, React</p>
@@ -83,31 +89,28 @@
           <p>PHP, Laravel</p>
         </div>
         <!-- New Card -->
-        <div class="col-md-4">
+        <div class="col-md-3 card shadow">
             <p class="lead">CMS</p>
             <p>WordPress</p>
             <p class="lead">Version Control</p>
             <p>Git, GitHub</p>
           </div>
           <!-- New Card -->
-          <div class="col-md-4">
+          <div class="col-md-3 card shadow">
             <p class="lead">Code Editor</p>
             <p>VS Code (normally)</p>
             <p class="lead">Other</p>
             <p>Command Line, NPM, Composer</p>
           </div>
       </div> <!-- End row -->
-      <div class="down-icon text-center">
-        <a href="#">
-          <i class="fas fa-caret-down bg-white border text-custom-dark p-4 rounded-circle"></i>
-        </a>
-      </div>
     </div>
   </section>
   
 
 
-
+<footer class="text-center text-light py-3">
+  Taylor Wilkinson &copy; <?php echo date("Y"); ?>
+</footer>
 
 
   <!-- Scripts -->
