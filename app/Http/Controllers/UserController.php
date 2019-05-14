@@ -21,8 +21,13 @@ class UserController extends Controller {
         }
      }
     public function create() {
-
-     }
+        try {
+        $roles = Role::orderBy('name')->get();
+            return view('admin/users/create', ['userRoles' => $roles]);
+        } catch(\Exception $e) {
+            return redirect()->route('users.main');
+        }
+    }
     public function store() {
          
      }
