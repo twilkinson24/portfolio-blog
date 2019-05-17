@@ -8,16 +8,14 @@
       <h1 class="jumbotron-heading">DASHBOARD</h1>
     </div>
   </section>
-  <section class="height-basic">
-    <div class="container" style="margin-top: 180px; margin-bottom: 180px;">
-      <div class="col-sm-10 col-sm-offset-1">
+  <section class="">
+    <div class="container">
               <div class="row">
                   <div class="contact_contant">
                       <div class="col-sm-10">
                           
                           <div class="first-section flex-center">
                               <div class="col-md-5 col-md-offset-1">
-                        
                                           <div class="row">
                               
                                               <div class="card-module cards">

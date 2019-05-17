@@ -10,7 +10,7 @@
                       <div class="panel-heading">
                            <span class="black-font">Usuarios</span>
                            <div class="pull-right">
-                              <!-- CREATE USER -->
+                              <a href="{{ route('users.create') }}" class="btn btn-complete"><i class="fa fa-plus"></i> Agregar</a>
                            </div>
                       </div>
                            <div class="panel-body">
@@ -39,7 +39,7 @@
                                                     </td>
                                                     <td class="v-align-middle">
                                                         <!-- Botones de accion -->
-
+                                                    <a href="{{ route('users.show', $user->id) }}">Ver</a>
                                                     </td>
                                                </tr>
                                                @endforeach

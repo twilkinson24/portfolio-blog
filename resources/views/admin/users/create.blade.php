@@ -15,7 +15,7 @@
                                       <label for="role_id" class="col-md-4 control-label">Rol*</label>
                                       <div class="col-md-6">
                                            <select id="role_id" name="role_id" class="form-control capitalize" required>
-                                              @foreach ($roles as $role)
+                                              @foreach ($userRoles as $role)
                                                   <option value="{{ $role->id }}">{{ $role->name }}</option>
                                               @endforeach
                                           </select>

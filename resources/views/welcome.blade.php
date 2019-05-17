@@ -70,7 +70,7 @@
     </div>
     <div class="down-icon rounded text-center">
       <a href="#">
-        <i class="fas fa-caret-down p-3 rounded-circle border border-dark"></i>
+        <i class="fas fa-caret-down p-3 rounded-circle text-custom-dark"></i>
       </a>
     </div>
   </section>
@@ -79,10 +79,10 @@
     <div class="text-center">
       <h3 class="py-3">Some of my recent projects</h3>
     </div>
-    <div class="container">
+    <div class="container py-3">
       <div class="row d-flex justify-content-center text-center">
         <!-- New Card -->
-        <div class="col-md-3 card shadow">      
+        <div class="custom-col-4 card shadow">      
           <a href="#" data-toggle="modal" data-target="#exampleModal1">
           <img class="project-pic" src="/img/recipes.png" alt="share recipes project">
           <h3 class="project-name">Share Recipes</h3>
@@ -124,9 +124,7 @@
           </div>
 
           <!-- New Card -->
-        <div class="col-md-3 card shadow">
-
-          
+        <div class="custom-col-4 card shadow">
             <a href="#" data-toggle="modal" data-target="#exampleModal2">
             <img class="project-pic" src="/img/weatherwatcher.png" alt="weather watcher project">
             <h3 class="project-name">Weather Watcher</h3>
@@ -169,8 +167,8 @@
             </div>
           
           <!-- New Card -->
-          <div class="col-md-3 card shadow">
-            
+          <div class="custom-col-4 card shadow">
+            hhh
           </div>
       </div> <!-- End row -->
     </div>
@@ -178,16 +176,17 @@
   <!-- ABOUT ME -->
   <section class="about-me">
       <div class="container">
-          <div class="text-center">
+          <div class="text-center about-icon">
               <h3 class="py-3"><i class="fas fa-user"></i></h3>
           </div>
         <div class="row d-flex justify-content-center">
-          <div class="col-md-2">
-            <img src="img/avatar.jpg"  class="rounded py-2" alt="Taylor Wilkinson - Web Developer">
+          <div class="avatar-wrap">
+            <img src="img/avatar.jpg"  class="rounded-circle max250" alt="Taylor Wilkinson - Web Developer">
           </div>
           <div class="col-md-8 d-flex justify-content-center flex-column">
-            <p class="lead">A little more about Taylor Wilkinson</p>
+            <p class="lead text-center text-md-left">A little more about Taylor Wilkinson</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quidem laudantium ab error tempore fuga dicta labore reprehenderit, eius et earum, inventore quasi iusto eaque molestiae ad sapiente laborum sint.</p>
+            <p class="text-center text-md-left"><a href="#">My Resume</a> | <a href="/contact">Contact</a></p>
           </div>
         </div>
       </div>
