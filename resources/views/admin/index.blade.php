@@ -3,17 +3,13 @@
   
   
   <!--/ header-->
-  <section class="jumbotron text-center bg-white">
-    <div class="container">
-      <h1 class="jumbotron-heading">DASHBOARD</h1>
-    </div>
+  <section class="text-center">
+      <h1>Welcome {{ $user }}</h1>
   </section>
   <section class="">
     <div class="container">
               <div class="row">
-                  <div class="contact_contant">
                       <div class="col-sm-10">
-                          
                           <div class="first-section flex-center">
                               <div class="col-md-5 col-md-offset-1">
                                           <div class="row">
@@ -27,7 +23,7 @@
                                                               </div>
                                                               <div class="col-xs-9 text-right">
                                                                   <div class="huge">{{ $userCount }}</div>
-                                                                  <div>Usuarios</div>
+                                                                  <div>Users</div>
                                                               </div>
                                                           </div>
                                                       </div>
@@ -69,7 +65,6 @@
                                    </div>
                               </div>
 
-                      </div>
                   </div>
               </div>
           </div>

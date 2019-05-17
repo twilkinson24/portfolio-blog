@@ -11,7 +11,10 @@ class AdminController extends Controller {
      public function index() {
           $userCount = User::orderBy('id')->get()->count();
           $articleCount = Article::orderBy('id')->get()->count();
-          return view('/admin/index', ['userCount' => $userCount, 'articleCount' => $articleCount]);
+          $user = User::select('name')->pluck('name')->take(1);
+          return view('/admin/index', ['userCount' => $userCount, 'articleCount' => $articleCount, 'user' => $user]);
+
+          // Get string for name, and welcome only first name. EX: Welcome Taylor
      }
 }
 

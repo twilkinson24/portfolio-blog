@@ -43,7 +43,8 @@ class UserController extends Controller {
             $user = User::find($id);
             if($user) {
                 $role = Role::find($user->role_id);
-                return view('admin/users/view', ['user' => $user, 'role' => $role]);
+                $name = Role::find($user->name);
+                return view('admin/users/view', ['user' => $user, 'role' => $role, 'name' => $name]);
             } else {
                 return redirect()->route('users.main');
             }
