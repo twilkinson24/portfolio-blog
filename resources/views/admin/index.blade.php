@@ -4,71 +4,54 @@
   
   <!--/ header-->
   <section class="text-center">
-      <h1>Welcome {{ $user }}</h1>
+      <h1 class="page-title">Welcome {{ $user }}</h1>
+      <p class="lead text-secondary my-2">Dashboard</p>
   </section>
-  <section class="">
+  <section class="admin-dashboard">
     <div class="container">
-              <div class="row">
-                      <div class="col-sm-10">
-                          <div class="first-section flex-center">
-                              <div class="col-md-5 col-md-offset-1">
-                                          <div class="row">
-                              
-                                              <div class="card-module cards">
-                                                  <div class="panel panel-primary">
-                                                      <div class="panel-heading">
-                                                          <div class="row">
-                                                              <div class="col-xs-3">
-                                                                  <i class="fa fa-users fa-5x"></i>
-                                                              </div>
-                                                              <div class="col-xs-9 text-right">
-                                                                  <div class="huge">{{ $userCount }}</div>
-                                                                  <div>Users</div>
-                                                              </div>
-                                                          </div>
-                                                      </div>
-                                                      <a href="{{ URL::asset('/admin/users') }}">
-                                                          <div class="panel-footer">
-                                                              <span class="pull-left">Ver detalles</span>
-                                                              <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                                              <div class="clearfix"></div>
-                                                          </div>
-                                                      </a>
-                                                  </div>
-                                              </div>
-
-                                  
-                                               <div class="card-module cards">
-                                                  <div class="panel panel-primary">
-                                                      <div class="panel-heading">
-                                                          <div class="row">
-                                                              <div class="col-xs-3">
-                                                                  <i class="fa fa-file fa-5x"></i>
-                                                              </div>
-                                                              <div class="col-xs-9 text-right">
-                                                                  <div class="huge">{{ $articleCount }}</div>
-                                                                  <div>Artículos</div>
-                                                              </div>
-                                                          </div>
-                                                      </div>
-                                                      <a href="{{ URL::asset('/admin/articles') }}">
-                                                          <div class="panel-footer">
-                                                              <span class="pull-left">Ver detalles</span>
-                                                              <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                                              <div class="clearfix"></div>
-                                                          </div>
-                                                      </a>
-                                                  </div>
-                                              </div>
-
-                                          </div>
-                                   </div>
-                              </div>
-
-                  </div>
-              </div>
-          </div>
-  </div>
+        <div class="dashboard-cards d-flex justify-content-center flex-column flex-sm-row">
+            <!-- New Card -->
+            <div class="card card-primary col-sm-4 p-0 m-2">
+                <div class="card-heading p-2">
+                    <div class="d-flex justify-content-center">
+                        <div class="admin-dash-icon mx-1">
+                            <i class="fa fa-users fa-5x"></i>
+                        </div>
+                        <div class="admin-dash-info mx-1 pt-1">
+                            <p class="lead m-0">{{ $userCount }}</p>
+                            <p>Users</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="{{ URL::asset('/admin/users') }}">
+                    <div class="card-footer text-center">
+                        <p class="m-0">Details</p>
+                        <div class="clearfix"></div>
+                    </div>
+                </a>
+            </div>
+            <!-- New Card -->
+            <div class="card card-primary col-sm-4 p-0 m-2">
+                <div class="card-heading p-2">
+                    <div class="d-flex justify-content-center">
+                        <div class="admin-dash-icon mx-2">
+                            <i class="fa fa-file fa-5x"></i>
+                        </div>
+                        <div class="admin-dash-info mx-1 pt-1">
+                            <p class="lead m-0">{{ $articleCount }}</p>
+                            <p class="p-0">Blog Posts</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="{{ URL::asset('/admin/articles') }}">
+                    <div class="card-footer text-center">
+                        <p class="m-0">Details</p>
+                        <div class="clearfix"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
 </section>
   
 
