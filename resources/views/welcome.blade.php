@@ -176,16 +176,13 @@
   <!-- ABOUT ME -->
   <section class="about-me">
       <div class="container">
-          <div class="text-center about-icon">
-              <h3 class="pb-3"><i class="fas fa-user"></i></h3>
-          </div>
         <div class="row d-flex justify-content-center">
-          <div class="avatar-wrap">
-            <img src="img/avatar.jpg"  class="rounded-circle max250" alt="Taylor Wilkinson - Web Developer">
+          <div class="avatar-wrap m-3">
+            <img src="img/avatar.jpg"  class="rounded-circle shadow-sm p-1 max250" alt="Taylor Wilkinson - Web Developer">
           </div>
           <div class="col-md-8 d-flex justify-content-center flex-column">
-            <p class="lead text-center text-md-left">A little more about Taylor Wilkinson</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quidem laudantium ab error tempore fuga dicta labore reprehenderit, eius et earum, inventore quasi iusto eaque molestiae ad sapiente laborum sint.</p>
+            <p class="lead text-center text-md-left m-3 font-weight-bold">A little more about Taylor Wilkinson</p>
+            <p class="lead text-left about-me-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quidem laudantium ab error tempore fuga dicta labore reprehenderit, eius et earum, inventore quasi iusto eaque molestiae ad sapiente laborum sint.</p>
             <p class="text-center text-md-left"><a href="#">My Resume</a> | <a href="/contact">Contact</a></p>
           </div>
         </div>

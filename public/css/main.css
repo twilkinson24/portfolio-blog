@@ -160,6 +160,12 @@ nav ul li a:hover:after {
      width: 100%;
      text-align: center;
 }
+@media only screen and (max-width: 768px) {
+     .down-icon {
+          position: static;
+          padding: 1rem;
+     }
+}
 
 .down-icon a i {
      font-size: 3rem;
@@ -173,8 +179,9 @@ nav ul li a:hover:after {
 
 
 /* Projects Section */
-section.projects {
-     padding: 5rem 0;
+section.projects,
+section.about-me {
+     padding: 10rem 0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -213,13 +220,22 @@ section.projects {
 /* About Me Section */
 .avatar-wrap {
      max-width: 200px;
+     box-sizing: border-box !important;
 }   
+
+.avatar-wrap img {
+     max-width: 100%;
+}
 
 @media only screen and (max-width: 768px) {
      .avatar-wrap {
           text-align: center;
      }
+     .about-me-desc {
+          padding: 0 1rem;
+     }
 }
+
 
 
 
@@ -285,9 +301,28 @@ h1.page-title {
 .btn-custom {
      min-width: 150px;
      background-color: rgba(255, 255, 255, .9);
+     background-image: linear-gradient(to top left, #fff, rgba(0, 47, 255, .2), rgba(0, 47, 255, .1));
      margin: 0 .7rem;
+     -webkit-transition: background-image 0.2s ease-in-out;
+     transition: background-image 0.9s ease-in-out;  
 }
+
+/*
+.btn-custom {
+     min-width: 150px;
+     margin: 0 .7rem;
+     background-color: #fff;
+     color: #fff;
+     background-image: linear-gradient(to top left, #fff, rgba(0, 47, 255, .7), rgb(0, 47, 255), rgba(0, 47, 255, .7), rgba(0, 47, 255, .5));
+     transition: all 70ms ease-in-out;
+}
+*/
 
 .btn-custom:hover {
      background-color: #fff;
+     color: #fff;
+     background-image: linear-gradient(to top left, #fff, rgba(0, 47, 255, .7), rgb(0, 47, 255), rgba(0, 47, 255, .7), rgba(0, 47, 255, .5));
+     transition: color .1s ease-in-out;
+     box-shadow: 1px 2px 4px #ccc;
+     border:none;  
 }
