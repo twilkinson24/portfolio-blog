@@ -24,7 +24,7 @@
   <!--header-->
   <header class="text-light">
     <nav class="shadow py-2">
-      <div class="container d-flex justify-content-between">
+      <div class="container d-flex flex-column flex-sm-row justify-content-between">
         <div class="menu-site-name"><h3>TW</h3></div>
         <ul class="nav-links d-flex">
           <li>

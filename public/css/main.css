@@ -48,6 +48,12 @@ nav h3 {
 
      nav ul.nav-links {
           justify-content: center;
+          flex-wrap: wrap;
+     }
+}
+@media only screen and (max-width: 375px){
+     nav ul.nav-links {
+          padding: .5rem 0;
      }
 }
 
@@ -56,8 +62,6 @@ nav h3 {
           display: none;
      }
 }
-
-
 
 nav ul {
      margin: 0;
@@ -71,6 +75,11 @@ nav .nav-link {
 
 nav ul li {
      position: relative;
+}
+@media only screen and (max-width: 375px){
+     nav ul li {
+          padding: .5rem 0;
+     }
 }
 
 /* Top and Bottom borders go out */ 
@@ -176,10 +185,18 @@ section.projects {
      }
 }
 
+@media only screen and (max-width: 1200px) {
+     .projects .custom-col-4 {
+          flex: 1 0 40%;
+          max-width: 40%;
+          margin: 1rem 2%;
+     }
+}
+
 @media only screen and (max-width: 768px) {
      .projects .custom-col-4 {
           max-width: 70%;
-          margin: 1rem 0;
+          margin: 1rem auto;
      }
 }
 
@@ -241,6 +258,7 @@ h1.page-title {
 @media only screen and (max-width: 600px) {
      h1.page-title {
           font-size: 2rem;
+          margin: 1rem 0 !important;
      }
 }
 

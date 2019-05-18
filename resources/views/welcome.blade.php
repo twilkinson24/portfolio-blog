@@ -80,7 +80,7 @@
       <h3 class="py-3">Some of my recent projects</h3>
     </div>
     <div class="container py-3">
-      <div class="row d-flex justify-content-center text-center">
+      <div class="row d-flex flex-column flex-md-row justify-content-center text-center" id="project-cards">
         <!-- New Card -->
         <div class="custom-col-4 card shadow">      
           <a href="#" data-toggle="modal" data-target="#exampleModal1">
@@ -177,7 +177,7 @@
   <section class="about-me">
       <div class="container">
           <div class="text-center about-icon">
-              <h3 class="py-3"><i class="fas fa-user"></i></h3>
+              <h3 class="pb-3"><i class="fas fa-user"></i></h3>
           </div>
         <div class="row d-flex justify-content-center">
           <div class="avatar-wrap">
