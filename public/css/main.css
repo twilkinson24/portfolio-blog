@@ -140,6 +140,14 @@ nav ul li a:hover:after {
      .jumbotron h1.jumbotron-heading {
           display: none;
      }
+
+     .jumbotron .container {
+          padding-top: 2rem;
+     }
+
+     .jumbotron {
+          min-height: 100%;
+     }
 }
 
 .jumbotron ul.jumbotron-social-icons {

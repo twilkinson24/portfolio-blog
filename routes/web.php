@@ -39,7 +39,7 @@ Route::group(['middleware' => ['auth', 'admin'], 'prefix' => 'admin'],
                 // Save user to DB
                 Route::post('/users/store', ['uses' => 'UserController@store', 'as' => 'users.store']);
                 // show
-                Route::get('/users/show/{id}{name}', ['uses' => 'UserController@show', 'as' => 'users.show']);
+                Route::get('/users/show/{id}', ['uses' => 'UserController@show', 'as' => 'users.show']);
                 // edit user
                 Route::get('/users/edit/{id}', ['uses' => 'UserController@edit', 'as' => 'users.edit']);
                 // update user

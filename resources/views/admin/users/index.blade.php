@@ -1,27 +1,25 @@
 @extends('layouts.admin')
 @section('content')
  
-       <section class="height-basic">
-           <div class="container" style="margin-top: 180px; margin-bottom: 180px;">
+       <section class="users">
+           <div class="container">
                <div class="row">
-                   <div class="panel panel-default">
-                    
-                    
-                      <div class="panel-heading">
-                           <span class="black-font">Usuarios</span>
-                           <div class="pull-right">
-                              <a href="{{ route('users.create') }}" class="btn btn-complete"><i class="fa fa-plus"></i> Agregar</a>
+                   <div class="card card-default border-0 bg-light mx-auto">
+                      <div class="card-heading">
+                           <h3 class="text-center">Users</h3>
+                           <div class="text-right">
+                              <a href="{{ route('users.create') }}" class="btn btn-complete text-primary"><i class="fa fa-plus"></i> New User</a>
                            </div>
                       </div>
-                           <div class="panel-body">
+                           <div class="card-body">
                                 <div id="tableWithDynamicRows_wrapper" class="dataTables_wrapper form-inline no-footer">
                                      <div class="table-responsive overflowFixed">
                                           <table id="tableWithDynamicRows" class="table table-hover demo-table-dynamic dataTable no-footer" role="grid" aria-describedby="tableWithDynamicRows_info">
                                                <thead>
                                                     <tr role="row">
-                                                         <th class="col-md-3">Nombre</th>
-                                                         <th class="col-md-4">Correo</th>
-                                                         <th class="col-md-2">Acciones</th>
+                                                         <th class="col-md-3">Name</th>
+                                                         <th class="col-md-4">Email</th>
+                                                         <th class="col-md-2">Action</th>
                                                     </tr>
                                                </thead>
                                                <tbody>
