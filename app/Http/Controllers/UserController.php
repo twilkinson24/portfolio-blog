@@ -52,14 +52,46 @@ class UserController extends Controller {
             return redirect()->route('users.main');
         }
      }    
-    public function edit() {
+    public function edit($id) {
+        try {  
+            $user = User::find($id);
+            if($user) {
+                $roles = Role::orderBy('name')->get();
+                return view('admin/users/update', ['user' => $user, 'roles' => $roles]);
+            } else {
+                return redirect()->route('users.main');
+            }
+        } catch(\Exception $e) {
+            return redirect()->route('users.main');
+        }
+     } 
 
+    public function update(UserEditRequest $request, $id) {
+         try {
+            $user = User::find($id);
+            $user->fill($request->all());
+            $user->save();
+
+            return redirect()->route('users.main');
+         } catch(\Exception $e) {
+            return redirect()->route('users.main');
+        }
      } 
-    public function update() {
-         
-     } 
-     public function destroy() {
-          
+
+     public function destroy($id) {        
+          try {
+            $user = User::find($id);
+            $articles = Article::where('user_id', $user->id)->get();
+
+            if($articles->count() == 0) {
+                $user->delete();
+            } 
+
+            return redirect()->route('users.main');
+
+          } catch(\Exception $e) {
+            return redirect()->route('users.main');
+        }
      } 
 }
 

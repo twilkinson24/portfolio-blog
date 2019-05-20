@@ -8,8 +8,8 @@
   <title>TW - Web Dev</title>
   <meta name="description" content="Taylor Wilkinson is an aspiring web developer">
   <meta name="keywords" content="web developer portfolio, web developer, css, JavaScript, React, ReactJS, Front-End Web Development, PHP, Laravel">
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,300|Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
-
+  <link href='https://fonts.googleapis.com/css?family=Kalam|Lato:400,700,300|Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
+  
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
@@ -47,11 +47,11 @@
   <!--/ header-->
   <section class="jumbotron rounded-0 mb-0 text-center">
     <div class="container">
-      <h1 class="jumbotron-heading">Taylor Wilkinson</h1>
-      <p class="lead">Michigander and passionate web developer looking for opportunities to gain experience and collaborate with awesome people.</p>
+      <h1 class="jumbotron-heading text-custom-dark" id="welcome-name">Taylor Wilkinson</h1>
+      <p class="lead">Passionate web developer looking for opportunities to gain experience and collaborate with awesome people.</p>
       <p>
-        <a href="#" class="btn btn-custom text-custom-dark border my-2">My Work</a>
-        <a href="/contact" class="btn btn-custom text-custom-dark border my-2">Get In Touch</a>
+        <a href="#" class="btn btn-custom shadow-sm text-custom-dark border my-2">My Work</a>
+        <a href="/contact" class="btn btn-custom shadow-sm text-custom-dark border my-2">Get In Touch</a>
       </p>
       <ul class="jumbotron-social-icons d-flex justify-content-around mx-auto">
           <li>
@@ -77,7 +77,7 @@
 
   <section class="projects bg-light">
     <div class="text-center">
-      <h3 class="py-3">Some of my recent projects</h3>
+      <h3 class="py-3 text-custom-dark">Some of my recent projects</h3>
     </div>
     <div class="container py-3">
       <div class="row d-flex flex-column flex-md-row justify-content-center text-center" id="project-cards">
@@ -85,7 +85,7 @@
         <div class="custom-col-4 card shadow">      
           <a href="#" data-toggle="modal" data-target="#exampleModal1">
           <img class="project-pic" src="/img/recipes.png" alt="share recipes project">
-          <h3 class="project-name">Share Recipes</h3>
+          <h3 class="project-name text-custom-dark">Share Recipes</h3>
           </a> 
 
         </div>
@@ -95,7 +95,7 @@
             <div class="modal-dialog modal-dialog-centered" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLongTitle">Share Recipes</h5>
+                  <h5 class="modal-title text-custom-dark" id="exampleModalLongTitle">Share Recipes</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
@@ -181,7 +181,7 @@
             <img src="img/avatar.jpg"  class="rounded-circle shadow-sm p-1 max250" alt="Taylor Wilkinson - Web Developer">
           </div>
           <div class="col-md-8 d-flex justify-content-center flex-column">
-            <p class="lead text-center text-md-left m-3 font-weight-bold">A little more about Taylor Wilkinson</p>
+            <p class="lead text-center text-md-left my-3 font-weight-bold text-custom-dark">A little more about Taylor Wilkinson</p>
             <p class="lead text-left about-me-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quidem laudantium ab error tempore fuga dicta labore reprehenderit, eius et earum, inventore quasi iusto eaque molestiae ad sapiente laborum sint.</p>
             <p class="text-center text-md-left"><a href="#">My Resume</a> | <a href="/contact">Contact</a></p>
           </div>

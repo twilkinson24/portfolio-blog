@@ -13,6 +13,13 @@ class ArticleController extends Controller {
      $this->middleware('auth');
      }
     public function index() {
+        try {
+            $articles = Article::orderBy('id', 'desc')->paginate(5);
+            return view('admin/articles/index', ['articles' => $articles]);
+
+        } catch (\Exception $e) {
+            return view('admin/index');
+        }
 
      }
     public function create() {

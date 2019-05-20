@@ -36,7 +36,11 @@
                                                   </td>
                                                   <td class="v-align-middle">
                                                        <!-- Botones de accion -->
-                                                  <a href="{{ route('users.show', $user->id) }}">See</a>
+                                                       <a href="{{ route('users.show', $user->id) }}">See</a>
+                                                       <a href="{{ route('users.edit', $user->id) }}">Edit</a>
+                                                       @if(Auth::user()->role_id == 1)
+                                                            <a href="{{ route('users.destroy', $user->id) }}" onclick="return confirm('Seguro?')" onkeypress="return confirm('Seguro?')">Delete</a>
+                                                       @endif
                                                   </td>
                                              </tr>
                                              @endforeach

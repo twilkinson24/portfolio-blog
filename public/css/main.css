@@ -306,6 +306,13 @@ h1.page-title {
      background-image: linear-gradient(to top left, rgb(2, 9, 66), rgb(0, 47, 255));
 }
 
+.btn-primary:hover {
+     background-color: rgba(2, 9, 66, .9);
+     background-image: none;
+     transition: all .2s ease-in-out;
+     box-shadow: 1px 2px 5px #ccc;
+}
+/*
 .btn-custom {
      min-width: 150px;
      background-color: rgba(255, 255, 255, .9);
@@ -314,23 +321,29 @@ h1.page-title {
      -webkit-transition: background-image 0.2s ease-in-out;
      transition: background-image 0.9s ease-in-out;  
 }
+*/
 
-/*
 .btn-custom {
      min-width: 150px;
      margin: 0 .7rem;
      background-color: #fff;
      color: #fff;
-     background-image: linear-gradient(to top left, #fff, rgba(0, 47, 255, .7), rgb(0, 47, 255), rgba(0, 47, 255, .7), rgba(0, 47, 255, .5));
+     background-image: linear-gradient(to top right,rgba(0, 47, 255, 1), rgb(0, 47, 255), rgb(0, 47, 255), rgba(0, 47, 255, .8));
      transition: all 70ms ease-in-out;
 }
-*/
+
 
 .btn-custom:hover {
-     background-color: #fff;
+     background-color: rgba(0, 47, 255, .7);
      color: #fff;
-     background-image: linear-gradient(to top left, #fff, rgba(0, 47, 255, .7), rgb(0, 47, 255), rgba(0, 47, 255, .7), rgba(0, 47, 255, .5));
-     transition: color .1s ease-in-out;
-     box-shadow: 1px 2px 4px #ccc;
+     background-image: none;
+     transition: all .4s ease-in-out;
+     box-shadow: none !important;
      border:none;  
+}
+
+#welcome-name {
+     font-family: "kalam", Arial, Helvetica, sans-serif;
+     font-weight: bolder;
+     font-size: 3rem;
 }

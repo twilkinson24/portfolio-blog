@@ -58,7 +58,7 @@
                         </div>
                     </fieldset>
                     <div class="form-group text-center btn-div">
-                        <button type="submit" class="btn btn-primary btn-form">Save</button>
+                        <button type="submit" class="btn btn-primary">Save</button>
                         <a href="{{ route('users.main') }}" class="btn btn-danger btn-form">Cancel</a>
                     </div>
                 </form>
