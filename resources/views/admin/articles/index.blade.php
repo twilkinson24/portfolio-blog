@@ -7,7 +7,7 @@
              <div class="card-body">
                           <span class="black-font">Articles</span>
                           <div class="pull-right">
-                              <a href="{{ route('articles.create') }}" class="btn btn-complete"><i class="fa fa-plus"></i> Agregar</a> 
+                              <a href="{{ route('articles.create') }}" class="btn btn-complete"><i class="fa fa-plus"></i> Add New</a> 
                           </div>
                      </div>
                           <div class="card-body">

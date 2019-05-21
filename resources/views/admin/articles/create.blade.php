@@ -1,20 +1,19 @@
 @extends('layouts.admin')
 @section('content')
 
-<section class="height-basic">
-          <div class="container" style="margin-top: 180px; margin-bottom: 180px;">
-              <div class="row">
-                  <div>
-                       <div class="panel panel-default">
-                           <div class="panel-heading panel-heading-right"><span class="black-font">Crear Artículo</span></div>
-                           <div class="panel-body">
+<section class="articles">
+    <div class="container">
+        <div class="col-sm-6 mx-auto bg-light shadow-sm border-0 card card-default">
+            <div class="card-body">
+                        <div class="card-heading card-heading-right"><span class="black-font">Create Article</span></div>
+                           <div class="card-body">
                                <form id="form-article" class="form-horizontal" role="form" method="POST" action="{{ route('articles.store') }}" enctype="multipart/form-data">
                                    {{ csrf_field() }}
                                    <fieldset>
-                                       <legend>Datos del Artículo</legend>
+                                       <legend>Article Details</legend>
                                        <div class="form-group">
-                                           <label for="state_id" class="col-md-4 control-label">Estado*</label>
-                                           <div class="col-md-6">
+                                           <label for="state_id" class="col-md-12 control-label">Status*</label>
+                                           <div class="col-md-12">
                                                 <select id="state_id" name="state_id" class="form-control capitalize">
                                                    @foreach ($states as $state)
                                                        <option value="{{ $state->id }}" @if($state->id == 1) selected="selected" @endif @if(Auth::user()->role_id != 1) disabled @endif>{{ $state->name }}</option>
@@ -24,8 +23,8 @@
                                        </div>
                                       
                                        <div class="form-group{{ $errors->has('title') ? ' has-error' : '' }}">
-                                           <label for="title" class="col-md-4 control-label">Título*</label>
-                                           <div class="col-md-6">
+                                           <label for="title" class="col-md-12 control-label">Title*</label>
+                                           <div class="col-md-12">
                                                <input id="title" type="text" class="form-control" name="title" value="{{ old('title') }}" required>
                                                @if ($errors->has('title'))
                                                    <span class="help-block">
@@ -35,8 +34,8 @@
                                            </div>
                                        </div>
                                        <div class="form-group{{ $errors->has('image') ? ' has-error' : '' }}">
-                                           <label for="image" class="col-md-4 control-label">Foto*</label>
-                                           <div class="col-md-6">
+                                           <label for="image" class="col-md-8 control-label">Image*</label>
+                                           <div class="col-md-8">
                                                <input id="image" type="file" accept=".png, .jpg, .jpeg" class="form-control" name="image" required>
                                                 @if ($errors->has('image'))
                                                    <span class="help-block">
@@ -47,8 +46,8 @@
                                        </div>
                                    
                                        <div class="form-group{{ $errors->has('summary') ? ' has-error' : '' }}">
-                                           <label for="summary" class="col-md-4 control-label">Summary*</label>
-                                           <div class="col-md-6">
+                                           <label for="summary" class="col-md-12 control-label">Summary*</label>
+                                           <div class="col-md-12">
                                                <input id="summary" type="text" class="form-control" name="summary" value="{{ old('summary') }}" required>
                                                @if ($errors->has('summary'))
                                                    <span class="help-block">
@@ -58,8 +57,8 @@
                                            </div>
                                        </div>
                                        <div class="form-group{{ $errors->has('description') ? ' has-error' : '' }}">
-                                           <label for="description" class="col-md-4 control-label">Descripción*</label>
-                                           <div class="col-md-6">
+                                           <label for="description" class="col-md-10 control-label">Description*</label>
+                                           <div class="col-md-12">
                                                <textarea id="description" class="form-control" name="description" required>{{ old('description') }}</textarea>
                                                @if ($errors->has('description'))
                                                    <span class="help-block">
@@ -71,9 +70,9 @@
                                     
                                    </fieldset>
                                    <div class="form-group text-center btn-div">
-                                       <div class="col-md-6 col-md-offset-4">
-                                           <button type="submit" class="btn btn-primary btn-form">Guardar</button>
-                                           <a href="{{ route('articles.main') }}" class="btn btn-danger btn-form">Cancelar</a>
+                                       <div class="col-md-12">
+                                           <button type="submit" class="btn btn-primary btn-form">Save</button>
+                                           <a href="{{ route('articles.main') }}" class="btn btn-danger btn-form">Cancel</a>
                                        </div>
                                    </div>
                                </form>
