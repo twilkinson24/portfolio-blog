@@ -7,6 +7,7 @@ use App\Http\Requests\ArticleEditRequest;
 use App\User;
 use App\Article;
 use App\State;
+use Carbon\Carbon;
 
 class ArticleController extends Controller {
     public function __construct() {
@@ -20,13 +21,39 @@ class ArticleController extends Controller {
         } catch (\Exception $e) {
             return view('admin/index');
         }
-
      }
     public function create() {
-
+        try {
+            $states = State::orderBy('id')->get();
+            return view('admin/articles/create', ['states' => $states]);
+        } catch (\Exception $e) {
+            return redirect()->route('articles.main');
+        }
      }
-    public function store() {
-         
+    public function store(ArticleRequest $request) {
+        try {
+            $article = new Article($request->all());
+            $article->user_id = \Auth::user()->id;
+
+            $file = $request->file('image');
+            $file_name = $file->getClientOriginalName();
+            $file_extension = \File::extension($file_name);
+            $time = $this->getTimeName();
+            $new_file_name = $time . '.' . $file_extension;
+
+            while(\Storage::exists($new_file_name)) {
+                $time = $this->getTimeName();
+                $new_file_name = $time . '.' . $file_extension;
+            }
+
+            \Storage::disk('local')->put($new_file_name, \File::get($file));
+            $article->image = $new_file_name;
+            $article->save();
+
+            return redirect()->route('articles.main');   
+        } catch (\Exception $e) {
+            return redirect()->route('articles.main');        
+        }
      }
     public function show() {
 
@@ -40,6 +67,14 @@ class ArticleController extends Controller {
      public function destroy() {
           
      } 
+     public function getTimeName() {
+         $time = Carbon::now()->toDateTimeString();
+         $time = str_replace('-', '', $time);
+         $time = str_replace(':', '', $time);
+         $time = str_replace(' ', '', $time);
+
+         return $time;
+     }
 }
 
 ?>

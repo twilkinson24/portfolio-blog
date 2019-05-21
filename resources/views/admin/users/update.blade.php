@@ -45,7 +45,7 @@
                             <div class="form-group text-center btn-div">
                                 <div class="col-sm-12 text-center">
                                     <button type="submit" class="btn btn-primary btn-form">Save</button>
-                                    <a href="{{ route('users.main') }}" class="btn btn-danger btn-form">Cancel</a>
+                                    <a href="{{ route('users.main') }}" class="btn btn-danger">Cancel</a>
                                 </div>
                             </div>
                         </form>

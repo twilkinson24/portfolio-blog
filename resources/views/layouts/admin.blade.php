@@ -25,7 +25,7 @@
   <header class="text-light">
     <nav class="shadow py-2">
       <div class="container d-flex flex-column flex-sm-row justify-content-between">
-        <div class="menu-site-name"><h3>TW</h3></div>
+        <div class="menu-site-name"><a href="/" class="text-white text-decoration-none"><h3>TW</h3></a></div>
         <ul class="nav-links d-flex">
           <li>
             <a href="#" class="nav-link">Projects</a>

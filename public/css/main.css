@@ -312,16 +312,16 @@ h1.page-title {
      transition: all .2s ease-in-out;
      box-shadow: 1px 2px 5px #ccc;
 }
-/*
-.btn-custom {
-     min-width: 150px;
-     background-color: rgba(255, 255, 255, .9);
-     background-image: linear-gradient(to top left, #fff, rgba(0, 47, 255, .2), rgba(0, 47, 255, .1));
-     margin: 0 .7rem;
-     -webkit-transition: background-image 0.2s ease-in-out;
-     transition: background-image 0.9s ease-in-out;  
+
+.btn-danger {
+     background-color: rgb(255, 0, 0);
+     background-image: linear-gradient(to top left, rgba(211, 5, 5, 0.6), rgba(255, 0, 0, .8));
+     transition: all 0.9s ease-in-out;  
+     opacity: .9;
+}.btn-danger:hover {  
+     opacity: 1;
 }
-*/
+
 
 .btn-custom {
      min-width: 150px;
