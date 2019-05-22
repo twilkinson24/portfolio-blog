@@ -55,11 +55,31 @@ class ArticleController extends Controller {
             return redirect()->route('articles.main');        
         }
      }
-    public function show() {
-
+    public function show($id) {
+        try {
+            $article = Article::find($id);
+            if($article) {
+                $state = State::find($article->state_id);
+                return view('admin/articles/view', ['article' => $article, 'state' => $state]);
+            } else {
+                return redirect()->route('articles.main');      
+            }
+        } catch (\Exception $e) {
+            return redirect()->route('articles.main');        
+        }
      }    
-    public function edit() {
-
+    public function edit($id) {
+        try {
+            $article = Article::find($id);
+            if($article) {
+                $states = States::orderBy('name')->get();
+                return view('admin/articles/update', ['article' => $article, 'states' => $states]);
+            } else {
+                return redirect()->route('articles.main');        
+            }
+        } catch (\Exception $e) {
+            return redirect()->route('articles.main');        
+        }
      } 
     public function update() {
          

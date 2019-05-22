@@ -49,9 +49,10 @@
                                                         </p>
                                                    </td>
                                                    <td class="v-align-middle buttons-table">
-                                                       <!--
+                                                      
 
-                                                        <a href="{{ route('articles.show', $article->id) }}"><button class="btn btn-complete"><i class="fa fa-eye"></i></button></a> 
+                                                        <a href="{{ route('articles.show', $article->id) }}">See</a> 
+                                                        <!--
                                                         <a href="{{ route('articles.edit', $article->id) }}">
                                                              <button class="btn btn-complete"><i class="fa fa-edit"></i></button>
                                                         </a> 
