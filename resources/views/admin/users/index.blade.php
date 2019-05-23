@@ -3,7 +3,7 @@
  
      <section class="users">
           <div class="container">
-               <div class="card card-default col-sm-6 border-0 bg-light shadow-sm mx-auto">
+               <div class="card card-default col-lg-6 border-0 bg-light shadow-sm mx-auto">
                     <div class="card-heading">
                          <h3 class="text-center">Users</h3>
                          <div class="text-right">

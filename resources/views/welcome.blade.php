@@ -1,55 +1,13 @@
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TW - Web Dev</title>
-  <meta name="description" content="Taylor Wilkinson is an aspiring web developer">
-  <meta name="keywords" content="web developer portfolio, web developer, css, JavaScript, React, ReactJS, Front-End Web Development, PHP, Laravel">
-  <link href='https://fonts.googleapis.com/css?family=Kalam|Lato:400,700,300|Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
-  
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
-  crossorigin="anonymous">
-  <link href="/css/main.css" rel="stylesheet" type="text/css">
-  <link rel="icon" href="./favicon.ico"> <!-- TAB ICON -->
-
-  
-
-</head>
-<body>
-  <!--header-->
-  <header class="text-light">
-    <nav class="shadow py-2">
-      <div class="container d-flex justify-content-between" id="nav-flex">
-        <div class="menu-site-name" id="desktop-site-name"><h3>TW</h3></div>
-        <div class="menu-site-name" id="mobile-site-name"><h3>Taylor Wilkinson</h3></div>
-        <ul class="nav-links d-flex">
-          <li>
-            <a href="#" class="nav-link">Projects</a>
-          </li>
-          <li>
-            <a href="#" class="nav-link">About Me</a>
-          </li>
-          <li>
-            <a href="#" class="nav-link">Blog</a>
-          </li>
-          <li>
-            <a href="#" class="nav-link">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+@extends('layouts.public')
+@section('content')
+    
   <!--/ header-->
   <section class="jumbotron rounded-0 mb-0 text-center">
     <div class="container">
       <h1 class="jumbotron-heading text-custom-dark" id="welcome-name">Taylor Wilkinson</h1>
       <p class="lead">Passionate web developer looking for opportunities to gain experience and collaborate with awesome people.</p>
-      <p>
+      <p class="jumbo-btns">
         <a href="#" class="btn btn-custom shadow-sm text-custom-dark border my-2">My Work</a>
         <a href="/contact" class="btn btn-custom shadow-sm text-custom-dark border my-2">Get In Touch</a>
       </p>
@@ -189,18 +147,4 @@
       </div>
   </section>
 
-  
-  
-
-
-<footer class="text-center text-light py-3">
-  Taylor Wilkinson &copy; <?php echo date("Y"); ?>
-</footer>
-
-
-  <!-- Scripts -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</body>
-</html>
+@endsection

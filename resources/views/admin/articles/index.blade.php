@@ -3,7 +3,7 @@
  
 <section class="articles">
      <div class="container">
-         <div class="col-sm-6 mx-auto bg-light shadow-sm border-0 card card-default">
+         <div class="col-sm-8 mx-auto bg-light shadow-sm border-0 card card-default">
              <div class="card-body">
                           <span class="black-font">Articles</span>
                           <div class="pull-right">
@@ -16,8 +16,8 @@
                                          <table id="tableWithDynamicRows" class="table table-hover demo-table-dynamic dataTable no-footer" role="grid" aria-describedby="tableWithDynamicRows_info">
                                               <thead>
                                                    <tr role="row">
-                                                        <th class="col-md-3">Title</th>
-                                                        <th class="col-md-3">Summary</th>
+                                                        <th class="col-md-2">Title</th>
+                                                        <th class="col-md-2">Summary</th>
                                                         <th class="col-md-2">Date</th>
                                                         <th class="col-md-2">Status</th>
                                                         <th class="col-md-2">Actions</th>
@@ -52,21 +52,20 @@
                                                       
 
                                                         <a href="{{ route('articles.show', $article->id) }}">See</a> 
-                                                        <!--
+                                                        
                                                         <a href="{{ route('articles.edit', $article->id) }}">
-                                                             <button class="btn btn-complete"><i class="fa fa-edit"></i></button>
+                                                             Edit
                                                         </a> 
+                                                        
                                                         @if(Auth::user()->role_id == 1)
                                                              <a href="{{ route('articles.destroy', $article->id) }}" onclick="return confirm('Delete the article?')" onkeypress="return confirm('Delete the article?')">
-                                                                  <button class="btn btn-complete">
-                                                                       <i class="fa fa-remove"></i>
-                                                                  </button>
+                                                                 Delete
                                                              </a>
                                                         @endif
 
                                                            
                                                    </td>
-                                                    -->
+                                                    
                                               </tr>
                                               @endforeach
                                               </tbody>

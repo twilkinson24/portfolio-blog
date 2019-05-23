@@ -3,7 +3,7 @@
 
 <section class="articles">
     <div class="container">
-        <div class="col-sm-6 mx-auto bg-light shadow-sm border-0 card card-default">
+        <div class="col-sm-10 mx-auto bg-light shadow-sm border-0 card card-default">
             <div class="card-body">
                         <div class="card-heading card-heading-right"><span class="black-font">Create Article</span></div>
                            <div class="card-body">
@@ -12,8 +12,8 @@
                                    <fieldset>
                                        <legend>Article Details</legend>
                                        <div class="form-group">
-                                           <label for="state_id" class="col-md-12 control-label">Status*</label>
-                                           <div class="col-md-12">
+                                           <label for="state_id" class="col-md-16 control-label">Status*</label>
+                                           <div class="col-md-6">
                                                 <select id="state_id" name="state_id" class="form-control capitalize">
                                                    @foreach ($states as $state)
                                                        <option value="{{ $state->id }}" @if($state->id == 1) selected="selected" @endif @if(Auth::user()->role_id != 1) disabled @endif>{{ $state->name }}</option>
@@ -23,8 +23,8 @@
                                        </div>
                                       
                                        <div class="form-group{{ $errors->has('title') ? ' has-error' : '' }}">
-                                           <label for="title" class="col-md-12 control-label">Title*</label>
-                                           <div class="col-md-12">
+                                           <label for="title" class="col-md-6 control-label">Title*</label>
+                                           <div class="col-md-6">
                                                <input id="title" type="text" class="form-control" name="title" value="{{ old('title') }}" required>
                                                @if ($errors->has('title'))
                                                    <span class="help-block">
@@ -34,8 +34,8 @@
                                            </div>
                                        </div>
                                        <div class="form-group{{ $errors->has('image') ? ' has-error' : '' }}">
-                                           <label for="image" class="col-md-8 control-label">Image*</label>
-                                           <div class="col-md-8">
+                                           <label for="image" class="col-md-4 control-label">Image*</label>
+                                           <div class="col-md-4">
                                                <input id="image" type="file" accept=".png, .jpg, .jpeg" class="form-control" name="image" required>
                                                 @if ($errors->has('image'))
                                                    <span class="help-block">

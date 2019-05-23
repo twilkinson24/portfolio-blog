@@ -129,7 +129,7 @@ nav ul li a:hover:after {
 .jumbotron {
      min-height: 100vh;
      background-color: #fff;
-/*     background-image: linear-gradient(to bottom, rgba(240, 240, 250, 0.8), rgba(35, 20 , 87, 0.6)); */
+     /* background-image: linear-gradient(to bottom, rgba(240, 240, 250, 0.8), rgba(35, 20 , 87, 0.1)); */ 
 }
 
 .jumbotron .container {
@@ -148,6 +148,16 @@ nav ul li a:hover:after {
      .jumbotron {
           min-height: 100%;
      }
+}
+/* Animations added */
+.jumbotron p.lead {
+     position: relative;
+     animation: 3s alternate slideFromLeft;
+}
+
+.jumbotron p.jumbo-btns {
+     position: relative;
+     animation: 3s alternate slideFromRight;
 }
 
 .jumbotron ul.jumbotron-social-icons {
@@ -343,7 +353,38 @@ h1.page-title {
 }
 
 #welcome-name {
+     position: relative;
      font-family: "kalam", Arial, Helvetica, sans-serif;
      font-weight: bolder;
      font-size: 3rem;
+     animation: 2s alternate siteTitle;
 }
+
+.articles table .col-md-2 {
+     width: auto;
+}
+
+@keyframes siteTitle {
+     0% {
+          top: -200px;
+          opacity: 0;
+     }
+     50% {
+          top: -100px;
+          opacity: .1;
+     }
+     100% {
+          top: 0;
+          opacity: 1;
+     }
+   }
+
+@keyframes slideFromLeft {
+     0% {left: -200px;}
+     100% {left: 0px;}
+   }
+
+   @keyframes slideFromRight {
+     0% {left: 200px;}
+     100% {left: 0px;}
+   }
