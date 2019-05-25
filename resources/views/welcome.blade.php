@@ -16,14 +16,11 @@
                <a href="https://github.com/coding4tacos/" class="text-custom-dark" target="_blank"><i class="fab fa-github"></i> </a>
           </li>
           <li>
-               <a href="https://twitter.com/coding4tacos/" class="text-custom-dark" target="_blank"> <i class="fab fa-twitter"></i> </a>
-          </li>
-          <li>
-               <a href="https://codepen.io/coding4tacos/" class="text-custom-dark" target="_blank"> <i class="fab fa-codepen"></i> </a>
-          </li>
-          <li>
-               <a href="https://www.linkedin.com/in/taylor-wilkinson-a6478229/"  class="text-custom-dark" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-          </li>
+              <a href="https://www.linkedin.com/in/taylor-wilkinson-a6478229/"  class="text-custom-dark" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+         </li>
+         <li>
+            <a href="https://codepen.io/coding4tacos/" class="text-custom-dark" target="_blank"> <i class="fab fa-codepen"></i> </a>
+       </li>
      </ul>
     </div>
     <div class="down-icon rounded text-center">
@@ -143,6 +140,20 @@
             <p class="lead text-left about-me-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quidem laudantium ab error tempore fuga dicta labore reprehenderit, eius et earum, inventore quasi iusto eaque molestiae ad sapiente laborum sint.</p>
             <p class="text-center text-md-left"><a href="#">My Resume</a> | <a href="/contact">Contact</a></p>
           </div>
+          <ul class="jumbotron-social-icons d-flex justify-content-around mx-auto">
+              <li>
+                   <a href="https://github.com/coding4tacos/" class="text-custom-dark" target="_blank"><i class="fab fa-github"></i> </a>
+              </li>
+              <li>
+                   <a href="https://twitter.com/coding4tacos/" class="text-custom-dark" target="_blank"> <i class="fab fa-twitter"></i> </a>
+              </li>
+              <li>
+                   <a href="https://codepen.io/coding4tacos/" class="text-custom-dark" target="_blank"> <i class="fab fa-codepen"></i> </a>
+              </li>
+              <li>
+                   <a href="https://www.linkedin.com/in/taylor-wilkinson-a6478229/"  class="text-custom-dark" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+         </ul>
         </div>
       </div>
   </section>

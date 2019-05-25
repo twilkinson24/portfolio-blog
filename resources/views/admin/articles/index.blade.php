@@ -50,20 +50,19 @@
                                                         </p>
                                                    </td>
                                                    <td class="v-align-middle buttons-table">
-                                                      
-
-                                                        <a href="{{ route('articles.show', $article->id) }}">See</a> 
-                                                        
-                                                        <a href="{{ route('articles.edit', $article->id) }}">
-                                                             Edit
-                                                        </a> 
-                                                        
-                                                        @if(Auth::user()->role_id == 1)
-                                                             <a href="{{ route('articles.destroy', $article->id) }}" onclick="return confirm('Delete the article?')" onkeypress="return confirm('Delete the article?')">
-                                                                 Delete
-                                                             </a>
-                                                        @endif
-
+                                                       <ul class="list-group list-unstyled">
+                                                            <li class=""><a href="{{ route('articles.show', $article->id) }}">See</a> </li>
+                                                            
+                                                            <li><a href="{{ route('articles.edit', $article->id) }}">
+                                                                 Edit
+                                                            </a></li> 
+                                                            
+                                                            @if(Auth::user()->role_id == 1)
+                                                                 <li><a href="{{ route('articles.destroy', $article->id) }}" onclick="return confirm('Delete the article?')" onkeypress="return confirm('Delete the article?')">
+                                                                      Delete
+                                                                 </a></li>
+                                                            @endif
+                                                       </ul>
                                                            
                                                    </td>
                                                     
