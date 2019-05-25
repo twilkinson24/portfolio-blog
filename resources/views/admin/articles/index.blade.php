@@ -5,7 +5,8 @@
      <div class="container">
          <div class="col-sm-8 mx-auto bg-light shadow-sm border-0 card card-default">
              <div class="card-body">
-                          <span class="black-font">Articles</span>
+                    <a href="{{ route('/') }}"><< admin</a>
+                          <h3 class="text-center">Articles</h3>
                           <div class="pull-right">
                               <a href="{{ route('articles.create') }}" class="btn btn-complete"><i class="fa fa-plus"></i> Add New</a> 
                           </div>

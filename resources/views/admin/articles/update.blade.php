@@ -5,9 +5,9 @@
           <div class="container" style="margin-top: 180px; margin-bottom: 180px;">
               <div class="row">
                   <div>
-                       <div class="panel panel-default">
-                           <div class="panel-heading panel-heading-right"><span class="black-font">Artículo - Editar</span></div>
-                           <div class="panel-body">
+                       <div class="card card-default">
+                           <div class="card-heading card-heading-right"><span class="black-font">Artículo - Editar</span></div>
+                           <div class="card-body">
                                <form id="form-article" class="form-horizontal" role="form" method="POST" action="{{ route('articles.update', $article->id) }}" enctype="multipart/form-data">
                                    {{ csrf_field() }}
                                    <input type="hidden" name="id" value="{{ $article->id }}">

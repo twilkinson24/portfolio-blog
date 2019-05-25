@@ -5,9 +5,9 @@
     <div class="container">
         <div class="col-11 mx-auto bg-light shadow-sm border-0 card card-default">
             <div class="card-body">
-                 
-                         
-                              <h2 style="margin-bottom: 15px;">Datos del Artículo</h2>
+                <a href="{{ route('/') }}"><< admin</a>
+                <a href="{{ route('articles.main') }}"><< articles</a>
+                              <h2 class="text-center" style="margin-bottom: 15px;">Datos del Artículo</h2>
                               <div class="form-group margin-top-40 col-md-6">
                                   <label class="col-md-10" style="font-weight: bold;">Estado</label>
                                   <p class="col-md-10">{{ $state->name }}</p>
