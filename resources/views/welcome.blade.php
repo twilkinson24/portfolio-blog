@@ -139,8 +139,7 @@
             <p class="lead text-center text-md-left my-3 font-weight-bold text-custom-dark">A little more about Taylor Wilkinson</p>
             <p class="lead text-left about-me-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quidem laudantium ab error tempore fuga dicta labore reprehenderit, eius et earum, inventore quasi iusto eaque molestiae ad sapiente laborum sint.</p>
             <p class="text-center text-md-left"><a href="#">My Resume</a> | <a href="/contact">Contact</a></p>
-          </div>
-          <ul class="jumbotron-social-icons d-flex justify-content-around mx-auto">
+            <ul class="social-icons d-flex justify-content-left">
               <li>
                    <a href="https://github.com/coding4tacos/" class="text-custom-dark" target="_blank"><i class="fab fa-github"></i> </a>
               </li>
@@ -154,6 +153,7 @@
                    <a href="https://www.linkedin.com/in/taylor-wilkinson-a6478229/"  class="text-custom-dark" target="_blank"><i class="fab fa-linkedin-in"></i></a>
               </li>
          </ul>
+          </div>
         </div>
       </div>
   </section>

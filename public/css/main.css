@@ -3,6 +3,11 @@ html, body {
      margin: 0;
 }
 
+body {
+     position: relative;
+     min-height: 100vh;
+}
+
 section {
      padding: 2rem 0;
 }
@@ -172,9 +177,6 @@ nav ul li a:hover:after {
 }
 
 .down-icon {
-     position: absolute;
-     bottom: 7rem;
-     left: 0;
      width: 100%;
      text-align: center;
 }
@@ -254,6 +256,10 @@ section.about-me {
      }
 }
 
+/* Contact Page */
+section.contact {
+     min-height: 60vh;
+}
 
 
 
@@ -278,6 +284,8 @@ section.about-me {
 
 /* Footer */
 footer {
+     position: absolute;
+     bottom: 0;
      width: 100%;
      background-image: linear-gradient(to right, rgb(2, 9, 66), rgb(0, 47, 255));
 }
