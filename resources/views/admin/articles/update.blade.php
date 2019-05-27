@@ -13,10 +13,10 @@
                         <input type="hidden" name="id" value="{{ $article->id }}">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
                         <fieldset>
-                            <legend>Datos del Artículo</legend>
+                            <legend>Post Details</legend>
                             @if(Auth::user()->role_id == 1)
                             <div class="form-group">
-                                <label for="state_id" class="col-md-4 control-label">Estado*</label>
+                                <label for="state_id" class="col-md-4 control-label">Status*</label>
                                 <div class="col-md-6">
                                     <select id="state_id" name="state_id" class="form-control capitalize">
                                         @foreach ($states as $state)
@@ -28,7 +28,7 @@
                             @endif
 
                             <div class="form-group{{ $errors->has('title') ? ' has-error' : '' }}">
-                                <label for="title" class="col-md-4 control-label">Título*</label>
+                                <label for="title" class="col-md-4 control-label">Title*</label>
                                 <div class="col-md-6">
                                     <input id="title" type="text" class="form-control" name="title" value="{{ old('title', $article->title) }}" required>
                                     @if ($errors->has('title'))
@@ -39,7 +39,7 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="image" class="col-md-4 control-label">Foto</label>
+                                <label for="image" class="col-md-4 control-label">Picture</label>
                                 <div class="col-md-6">
                                     <input id="image" type="file" accept=".png, .jpg, .jpeg" class="form-control" name="image">
                                 </div>
@@ -56,7 +56,7 @@
                                 </div>
                             </div>
                             <div class="form-group{{ $errors->has('description') ? ' has-error' : '' }} col-md-12">
-                                <label for="description" class="col-md-4 control-label">Descripción*</label>
+                                <label for="description" class="col-md-4 control-label">Description*</label>
                                 <textarea id="description" class="form-control" name="description" required>{{ old('description' , $article->description) }}</textarea>
                                 @if ($errors->has('description'))
                                     <span class="help-block">
@@ -68,8 +68,8 @@
                         </fieldset>
                         <div class="form-group text-center btn-div">
                             <div class="col-sm-12 text-center">
-                                <button type="submit" class="btn btn-primary btn-form">Guardar</button>
-                                <a href="{{ route('articles.main') }}" class="btn btn-danger btn-form">Cancelar</a>
+                                <button type="submit" class="btn btn-primary btn-form">Save</button>
+                                <a href="{{ route('articles.main') }}" class="btn btn-danger btn-form">Cancel</a>
                             </div>
                         </div>
                     </form>
