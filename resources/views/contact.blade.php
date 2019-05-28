@@ -3,7 +3,7 @@
 
 <section class="contact d-flex justify-content-center flex-column text-center">
     <div class="container">
-        <h3>I'd love to hear from you!</h3>
+        <h3 class="text-custom-dark">I'd love to hear from you!</h3>
         <!--Form with header-->
         <form action="" method="post">
             <div class="card border-0">
