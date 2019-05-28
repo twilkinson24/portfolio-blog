@@ -8,6 +8,9 @@
   <title>TW - Web Dev</title>
   <meta name="description" content="Taylor Wilkinson is an aspiring web developer">
   <meta name="keywords" content="web developer portfolio, web developer, css, JavaScript, React, ReactJS, Front-End Web Development, PHP, Laravel">
+
+  <link rel="shortcut icon" href="{{ URL::asset('./img/logo/icon.ico') }}" type="image/x-icon">
+
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700,300|Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
 
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -15,9 +18,6 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
   crossorigin="anonymous">
   <link href="/css/main.css" rel="stylesheet" type="text/css">
-  <link rel="icon" href="./favicon.ico"> <!-- TAB ICON -->
-
-  
 
 </head>
 <body>

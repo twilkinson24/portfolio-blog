@@ -8,6 +8,9 @@
   <title>TW - Web Dev</title>
   <meta name="description" content="Taylor Wilkinson is an aspiring web developer">
   <meta name="keywords" content="web developer portfolio, web developer, css, JavaScript, React, ReactJS, Front-End Web Development, PHP, Laravel">
+
+<link rel="shortcut icon" href="{{ URL::asset('./img/logo/icon.ico') }}" type="image/x-icon">
+
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700,300|Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
 
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">

@@ -17,9 +17,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/blog', function () {
-    return view('blog');
-});
+Route::get('/blog/{text?}', ['uses' => 'PublicArticleController@publicIndex', 'as' => 'articles.publicIndex']);
+Route::get('/article/{title}/{id}', ['uses' => 'PublicArticleController@description', 'as' => 'articles.description']);
 
 Route::get('/contact', function () {
     return view('contact');
