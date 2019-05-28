@@ -135,11 +135,11 @@
           <div class="avatar-wrap m-3">
             <img src="img/avatar.jpg"  class="rounded-circle shadow-sm p-1 max250" alt="Taylor Wilkinson - Web Developer">
           </div>
-          <div class="col-md-8 d-flex justify-content-center flex-column">
+          <div class="col-md-8 d-flex h-100 justify-content-center flex-column">
             <p class="lead text-center text-md-left my-3 font-weight-bold text-custom-dark">A little more about Taylor Wilkinson</p>
             <p class="lead text-left about-me-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quidem laudantium ab error tempore fuga dicta labore reprehenderit, eius et earum, inventore quasi iusto eaque molestiae ad sapiente laborum sint.</p>
             <p class="text-center text-md-left"><a href="#">My Resume</a> | <a href="/contact">Contact</a></p>
-            <ul class="social-icons list-unstyled col-md-8 border border-danger d-flex justify-content-between">
+            <ul class="social-icons list-unstyled mx-auto m-md-0 col-8 col-md-6 d-flex justify-content-between p-0">
               <li>
                    <a href="https://github.com/coding4tacos/" class="text-custom-dark" target="_blank"><i class="fab fa-github"></i> </a>
               </li>

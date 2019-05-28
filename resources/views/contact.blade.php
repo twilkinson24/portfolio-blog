@@ -5,7 +5,7 @@
     <div class="container">
         <h3 class="text-custom-dark">I'd love to hear from you!</h3>
         <!--Form with header-->
-        <form action="" method="post">
+        <form action="" method="post" class="col-md-7 mx-auto">
             <div class="card border-0">
                 <div class="card-body p-3">
                     <!--Body-->
