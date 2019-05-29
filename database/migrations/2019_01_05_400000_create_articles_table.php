@@ -19,6 +19,7 @@ class CreateArticlesTable extends Migration
            $table->string('image');
            $table->string('summary');
            $table->text('description');
+           $table->string('author_id');
            $table->integer('state_id')->unsigned();
            $table->foreign('state_id')->references('id')->on('states')->onDelete('cascade')->onUpdate('cascade');
            $table->integer('user_id')->unsigned();
