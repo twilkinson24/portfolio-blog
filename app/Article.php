@@ -5,7 +5,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Article extends Model {
      protected $table = 'articles';
-     protected $fillable = ['title', 'image', 'summary', 'description', 'state_id', 'user_id'];
+     protected $fillable = ['title', 'image', 'summary', 'description', 'state_id', 'author_id', 'user_id'];
 
      public function state() {
           return $this->belongsTo('App\State');
@@ -15,7 +15,7 @@ class Article extends Model {
           return $this->belongsTo('App\User');
      }
      
-     public function articles() {
+     public function author() {
           return $this->belongsTo('App\Author');
      }
 }

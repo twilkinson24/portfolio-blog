@@ -3,12 +3,12 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Author extends Model {
+class State extends Model {
      protected $table = 'authors';
-     protected $fillable = ['id', 'name', 'image', 'create_at', 'updated_at'];
+     protected $fillable = ['name', 'image'];
 
      public function articles() {
-          return $this->belongsToMany('App\Article');
+          return $this->hasMany('App\Article');
      }
 }
 
