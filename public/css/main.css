@@ -286,6 +286,7 @@ section.contact {
 footer {
      position: absolute;
      bottom: 0;
+     left: 0;
      width: 100%;
      background-image: linear-gradient(to right, rgb(2, 9, 66), rgb(0, 47, 255));
 }
