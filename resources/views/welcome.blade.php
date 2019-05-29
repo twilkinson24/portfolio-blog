@@ -5,7 +5,7 @@
   <!--/ header-->
   <section class="jumbotron rounded-0 mb-0 text-center">
     <div class="container">
-      <h1 class="jumbotron-heading text-custom-light" id="welcome-name">Taylor Wilkinson</h1>
+      <h1 class="jumbotron-heading text-custom-dark" id="welcome-name">Taylor Wilkinson</h1>
       <p class="lead">Passionate web developer looking for opportunities to gain experience and collaborate with awesome people.</p>
       <p class="jumbo-btns">
         <a href="#" class="btn btn-custom shadow-sm text-custom-dark border my-2">My Work</a>
