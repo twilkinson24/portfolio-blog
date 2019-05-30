@@ -1,18 +1,18 @@
 @extends('layouts.admin')
 @section('content')
 
-<section class="height-basic">
-     <div class="container" style="margin-top: 180px; margin-bottom: 180px;">
-         <div class="row">
-             <div class="panel panel-default">
-
-                <div class="panel-heading">
-                     <span class="black-font">Authors</span>
-                     <div class="pull-right">
-                          <a href="{{ route('authors.create') }}" class="btn btn-complete"><i class="fa fa-plus"></i> Agregar</a>
+<section class="authors">
+     <div class="container">
+         <div class="col-sm-8 mx-auto bg-light shadow-sm border-0 card card-default">
+             <div class="card-body">
+                    <a href="{{ route('/') }}"><< admin</a>
+                          <h3 class="text-center">Authors</h3>
+                          <div class="pull-right">
+                              <a href="{{ route('authors.create') }}" class="btn btn-complete"><i class="fa fa-plus"></i> Add New</a> 
+                          </div>
                      </div>
-                </div>
-                     <div class="panel-body">
+
+                     <div class="card-body">
                           <div id="tableWithDynamicRows_wrapper" class="dataTables_wrapper form-inline no-footer">
                                <div class="table-responsive overflowFixed">
                                     <table id="tableWithDynamicRows" class="table table-hover demo-table-dynamic dataTable no-footer" role="grid" aria-describedby="tableWithDynamicRows_info">
@@ -31,14 +31,13 @@
                                                    </p>
                                               </td>
                                               <td class="v-align-middle ">
-                                                   <a href="{{ route('authors.show', $author->id) }}">See</a> 
-                                                   <a href="{{ route('authors.edit', $author->id) }}">
-                                                        Edit
-                                                   </a> 
+                                                  <ul class="list-group list-unstyled">
+                                                       <li><a href="{{ route('authors.show', $author->id) }}">See</a> </li>
+                                                       <li><a href="{{ route('authors.edit', $author->id) }}">Edit</a></li>   
                                                    @if(Auth::user()->role_id == 1)
-                                                        <a href="{{ route('authors.destroy', $author->id) }}" onclick="return confirm('¿Desea eliminar el autor?')" onkeypress="return confirm('¿Desea eliminar el autor?')">
+                                                        <li><a href="{{ route('authors.destroy', $author->id) }}" onclick="return confirm('¿Desea eliminar el autor?')" onkeypress="return confirm('¿Desea eliminar el autor?')">
                                                             Delete
-                                                        </a>
+                                                        </a></li>
                                                    @endif
                                               </td>
                                          </tr>
@@ -49,9 +48,8 @@
                                </div>
                           </div>
                      </div>
-                </div>
-           </div>
-      </div>
+               </div>
+          </div>
  </section>
 
 

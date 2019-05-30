@@ -6,7 +6,7 @@
          <div class="col-sm-8 mx-auto bg-light shadow-sm border-0 card card-default">
              <div class="card-body">
                     <a href="{{ route('/') }}"><< admin</a>
-                          <h3 class="text-center">Articles</h3>
+                          <h3 class="text-center">Blog Posts</h3>
                           <div class="pull-right">
                               <a href="{{ route('articles.create') }}" class="btn btn-complete"><i class="fa fa-plus"></i> Add New</a> 
                           </div>
@@ -51,7 +51,7 @@
                                                    </td>
                                                    <td class="v-align-middle buttons-table">
                                                        <ul class="list-group list-unstyled">
-                                                            <li class=""><a href="{{ route('articles.show', $article->id) }}">See</a> </li>
+                                                            <li><a href="{{ route('articles.show', $article->id) }}">See</a> </li>
                                                             
                                                             <li><a href="{{ route('articles.edit', $article->id) }}">
                                                                  Edit

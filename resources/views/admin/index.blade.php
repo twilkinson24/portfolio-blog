@@ -8,8 +8,8 @@
       <p class="lead text-secondary my-2">Dashboard</p>
   </section>
   <section class="admin-dashboard">
-    <div class="container">
-        <div class="dashboard-cards d-flex justify-content-center flex-column flex-sm-row">
+    <div class="container col-8">
+        <div class="dashboard-cards d-flex justify-content-center flex-column flex-sm-row flex-wrap">
             <!-- New Card -- Users -->
             <div class="card card-primary col-sm-4 p-0 m-2">
                 <div class="card-heading p-2">
@@ -50,7 +50,6 @@
                     </div>
                 </a>
             </div>
-
             <!-- New Card -- Authors -->
             <div class="card card-primary col-sm-4 p-0 m-2">
                 <div class="card-heading p-2">
