@@ -21,6 +21,17 @@
                                                </select>
                                            </div>
                                        </div>
+
+                                       <div class="form-group">
+                                        <label for="author_id" class="col-md-16 control-label">Author*</label>
+                                        <div class="col-md-6">
+                                             <select id="author_id" name="author_id" class="form-control capitalize">
+                                                @foreach ($authors as $author)
+                                                    <option value="{{ $author->id }}">{{ $author->name }}</option>
+                                                @endforeach
+                                            </select>
+                                        </div>
+                                    </div>
                                       
                                        <div class="form-group{{ $errors->has('title') ? ' has-error' : '' }}">
                                            <label for="title" class="col-md-6 control-label">Title*</label>

@@ -10,7 +10,7 @@
   <section class="admin-dashboard">
     <div class="container">
         <div class="dashboard-cards d-flex justify-content-center flex-column flex-sm-row">
-            <!-- New Card -->
+            <!-- New Card -- Users -->
             <div class="card card-primary col-sm-4 p-0 m-2">
                 <div class="card-heading p-2">
                     <div class="d-flex justify-content-center">
@@ -30,7 +30,7 @@
                     </div>
                 </a>
             </div>
-            <!-- New Card -->
+            <!-- New Card -- Articles -->
             <div class="card card-primary col-sm-4 p-0 m-2">
                 <div class="card-heading p-2">
                     <div class="d-flex justify-content-center">
@@ -44,6 +44,27 @@
                     </div>
                 </div>
                 <a href="{{ URL::asset('/admin/articles') }}">
+                    <div class="card-footer text-center">
+                        <p class="m-0">Details</p>
+                        <div class="clearfix"></div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- New Card -- Authors -->
+            <div class="card card-primary col-sm-4 p-0 m-2">
+                <div class="card-heading p-2">
+                    <div class="d-flex justify-content-center">
+                        <div class="admin-dash-icon mx-2">
+                            <i class="fa fa-file fa-5x"></i>
+                        </div>
+                        <div class="admin-dash-info mx-1 pt-1">
+                            <p class="lead m-0">{{ $authorCount }}</p>
+                            <p class="p-0">Authors</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="{{ URL::asset('/admin/authors') }}">
                     <div class="card-footer text-center">
                         <p class="m-0">Details</p>
                         <div class="clearfix"></div>

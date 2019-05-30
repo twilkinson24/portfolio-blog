@@ -60,4 +60,20 @@ Route::group(['middleware' => ['auth', 'admin'], 'prefix' => 'admin'],
                 Route::post('/articles/update/{id}', ['uses' => 'ArticleController@update', 'as' => 'articles.update']);
                 // delete article
                 Route::get('/articles/destroy/{id}', ['uses' => 'ArticleController@destroy', 'as' => 'articles.destroy']);  
+
+                
+                // authors
+                Route::get('/authors/', ['uses' => 'AuthorController@index', 'as' => 'authors.main']);
+                // Create Author
+                Route::get('/authors/create', ['uses' => 'AuthorController@create', 'as' => 'authors.create']);
+                // Save Author to DB
+                Route::post('/authors/store', ['uses' => 'AuthorController@store', 'as' => 'authors.store']);
+                // show
+                Route::get('/authors/show/{id}', ['uses' => 'AuthorController@show', 'as' => 'authors.show']);
+                // edit Author
+                Route::get('/authors/edit/{id}', ['uses' => 'AuthorController@edit', 'as' => 'authors.edit']);
+                // update Author
+                Route::post('/authors/update/{id}', ['uses' => 'AuthorController@update', 'as' => 'authors.update']);
+                // delete Author
+                Route::get('/authors/destroy/{id}', ['uses' => 'AuthorController@destroy', 'as' => 'authors.destroy']);  
             });

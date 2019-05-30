@@ -6,6 +6,7 @@ use App\Http\Requests\ArticleRequest;
 use App\Http\Requests\ArticleEditRequest;
 use App\User;
 use App\Article;
+use App\Author;
 use App\State;
 use Carbon\Carbon;
 
@@ -25,7 +26,8 @@ class ArticleController extends Controller {
     public function create() {
         try {
             $states = State::orderBy('id')->get();
-            return view('admin/articles/create', ['states' => $states]);
+            $authors = Author::orderBy('id')->get();
+            return view('admin/articles/create', ['states' => $states, 'authors' => $authors]);
         } catch (\Exception $e) {
             return redirect()->route('articles.main');
         }
