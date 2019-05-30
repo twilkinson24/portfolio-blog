@@ -1,13 +1,15 @@
 @extends('layouts.admin')
 @section('content')
 
-<section class="height-basic">
-     <div class="container" style="margin-top: 180px; margin-bottom: 180px;">
-         <div class="row">
-             <div>
-                  <div class="panel panel-default">
-                      <div class="panel-heading panel-heading-right"><h1>Autor - Editar</h1></div>
-                      <div class="panel-body">
+
+<section class="articles">
+        <div class="container">
+            <div class="col-md-6 mx-auto bg-light shadow-sm border-0 card card-default">
+                <div class="card-body">
+                    <a href="{{ route('/') }}"><< admin</a>
+                    <a href="{{ route('articles.main') }}"><< articles</a>
+                      <h2 class="text-center">Edit Author</h2>
+                      <div class="card-body">
                           <form class="form-horizontal" role="form" method="POST" action="{{ route('authors.update', $author->id) }}" enctype="multipart/form-data">
                               {{ csrf_field() }}
                               <input type="hidden" name="id" value="{{ $author->id }}">
@@ -16,7 +18,7 @@
                                   <legend>Datos del autor</legend>
                                   <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
                                       <label for="name" class="col-md-4 control-label">Nombre*</label>
-                                      <div class="col-md-6">
+                                      <div class="col-md-10">
                                           <input id="name" type="text" class="form-control" name="name" value="{{ old('name', $author->name) }}" required>
                                           @if ($errors->has('name'))
                                               <span class="help-block">
@@ -27,7 +29,7 @@
                                   </div>
                                   <div class="form-group">
                                       <label for="image" class="col-md-4 control-label">Foto</label>
-                                      <div class="col-md-6">
+                                      <div class="col-md-10">
                                           <input id="image" type="file" accept=".png, .jpg, .jpeg" class="form-control" name="image">
                                       </div>
                                   </div>

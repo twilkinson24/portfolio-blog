@@ -47,8 +47,7 @@
               <div class="widget-sidebar border border-danger">
                 <h2 class="title-widget-sidebar">Recent Posts</h2>
                   <div class="content-widget-sidebar">
-                  <ul>
-
+                  <ul class="list-unstyled">
                   @if(!$recentPosts->isEmpty())     
                       @for ($i = 0; $i < sizeof($recentPosts) && $i < 3; $i++)
 
@@ -59,7 +58,7 @@
                           <li class="recent-post">
                               <div class="post-img">
                                   <a href='{{ route("articles.description", [strtolower(str_replace(" ","-", trim($title))), $recentPosts[$i]->id]) }}'>
-                                        <img src="{{ URL::asset('./images/' . $recentPosts[$i]->image) }}" alt="{{$recentPosts[$i]->image}}" class="img-responsive">
+                                        <img src="{{ URL::asset('./image/' . $recentPosts[$i]->image) }}" alt="{{$recentPosts[$i]->image}}" class="img-responsive">
                                   </a>
                               </div>
                               <a href='{{ route("articles.description", [strtolower(str_replace(" ","-", trim($title))), $recentPosts[$i]->id]) }}'><h5>{{ $recentPosts[$i]->title }}</h5></a>
