@@ -1,6 +1,7 @@
 <?php
 namespace App\Http\Controllers;
 use App\Article;
+use App\Author;
 use DB;
 
 class PublicArticleController extends Controller {
@@ -18,7 +19,17 @@ class PublicArticleController extends Controller {
      }
 
      public function description($title, $id) {
-
+          try {
+               $article = Article::find($id);
+               if($article) {
+                    $author = Author::find($article->author_id);
+                    return view('articles/singleArticle', ['article' => $article, 'author' => $author]);
+               } else {
+                    return view('welcome');
+               }
+          } catch(\Exception $e) {
+               return view('welcome');
+          }
      }
 }
 

@@ -24,6 +24,10 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
+Route::post('/contact/send', ['uses' => 'ContactController@send', 'as' => 'contact.send']);
+
+
+
 
 //ADMIN & ARTICLE ROUTES
 Route::group(['middleware' => ['auth', 'admin'], 'prefix' => 'admin'], 

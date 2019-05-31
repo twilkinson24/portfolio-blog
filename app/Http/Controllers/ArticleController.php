@@ -62,7 +62,8 @@ class ArticleController extends Controller {
             $article = Article::find($id);
             if($article) {
                 $state = State::find($article->state_id);
-                return view('admin/articles/view', ['article' => $article, 'state' => $state]);
+                $author = Author::find($article->author_id);
+                return view('admin/articles/view', ['article' => $article, 'state' => $state, 'author' => $author]);
             } else {
                 return redirect()->route('articles.main');      
             }
@@ -75,7 +76,8 @@ class ArticleController extends Controller {
             $article = Article::find($id);
             if($article) {
                 $states = State::orderBy('name')->get();
-                return view('admin/articles/update', ['article' => $article, 'states' => $states]);
+                $authors = Author::orderBy('name')->get();
+                return view('admin/articles/update', ['article' => $article, 'states' => $states, 'authors' => $authors]);
             } else {
                 return redirect()->route('articles.main');        
             }
