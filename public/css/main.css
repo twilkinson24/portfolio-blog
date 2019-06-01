@@ -6,6 +6,8 @@ html, body {
 body {
      position: relative;
      min-height: 100vh;
+     padding-bottom: 4rem;
+     font-family: 'Lato', Helvetica, sans-serif;
 }
 
 section {
@@ -23,8 +25,11 @@ a {
 
 h1, h2, h3, h4 {
      font-family: 'Lato', 'Helvetica, sans-serif';
+     color: rgb(2, 9, 66);
 }
-
+p {
+     font-family: 'Lato', Helvetica, sans-serif;
+}
 ul {
      padding: 0;
      margin: 0;
@@ -68,12 +73,24 @@ nav .menu-site-name h3 {
           flex-wrap: wrap;
      }
 }
+
+
+
 @media only screen and (max-width: 375px){
      nav ul.nav-links {
           padding: .5rem 0;
      }
 }
-
+@media only screen and (min-width: 500px){
+     #site-name-sm {
+          display: none;
+     }
+}
+@media only screen and (max-width: 500px){
+     #site-name-lg {
+          display: none;
+     }
+}
 @media only screen and (min-width: 769px) {
      #mobile-site-name {
           display: none;
@@ -383,6 +400,11 @@ h1.page-title {
 
 .articles table .col-md-2 {
      width: auto;
+}
+
+article .article-image {
+     width: 60%;
+     border: 1px solid red;
 }
 
 @keyframes siteTitle {

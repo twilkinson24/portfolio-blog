@@ -22,15 +22,18 @@
   <link href="/css/main.css" rel="stylesheet" type="text/css">
   <link rel="icon" href="./favicon.ico"> <!-- TAB ICON -->
 
-  
-
 </head>
 <body>
   <!--header-->
   <header class="text-light">
     <nav class="shadow py-2">
       <div class="container d-flex flex-column flex-sm-row justify-content-between">
-        <div class="menu-site-name"><a href="/" class="text-white text-decoration-none"><h3>TW</h3></a></div>
+        <div class="menu-site-name" id="site-name-lg">
+          <a href="/" class="text-decoration-none"><h3 class="text-white">TW</h3></a>
+        </div>
+        <div class="menu-site-name" id="site-name-sm">
+            <a href="/" class="text-decoration-none"><h3 class="text-white">Taylor Wilkinson</h3></a>
+          </div>
         <ul class="nav-links d-flex">
           <li>
             <a href="#" class="nav-link">Projects</a>
@@ -49,18 +52,14 @@
     </nav>
   </header>
   <!--/ header-->
-  
 
-<!-- contenido aqui -->
+<!-- content -->
 @yield('content')
-
-
+<!-- end content -->
 
 <footer class="text-center text-light py-3">
      Taylor Wilkinson &copy; <?php echo date("Y"); ?>
-   </footer>
-   
-   
+</footer>
      <!-- Scripts -->
      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

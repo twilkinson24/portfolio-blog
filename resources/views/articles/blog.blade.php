@@ -4,10 +4,11 @@
  
   <section id="blog-section bg-white" >
     <div class="container">
+      <h3 class="text-center">Blog</h3>
+      <p class="lead text-center">A collection of my thoughts</p>
       <div class="row">
         <div class="col-lg-8 border border-primary">
               <div class="row">
-
               @if(!$articles->isEmpty())     
                   @for ($i = 0; $i < sizeof($articles); $i++)
 
