@@ -3,7 +3,7 @@
 
 <section class="authors">
      <div class="container">
-         <div class="col-sm-8 mx-auto bg-light shadow-sm border-0 card card-default">
+         <div class="col-sm-6 mx-auto bg-light shadow-sm border-0 card card-default">
              <div class="card-body">
                     <a href="{{ route('/') }}"><< admin</a>
                           <h3 class="text-center">Authors</h3>
@@ -18,19 +18,19 @@
                                     <table id="tableWithDynamicRows" class="table table-hover demo-table-dynamic dataTable no-footer" role="grid" aria-describedby="tableWithDynamicRows_info">
                                          <thead>
                                               <tr role="row">
-                                                   <th class="col-sm-8">Nombre</th>
-                                                   <th class="col-sm-4">Acciones</th>
+                                                   <th class="col-sm-8">Name</th>
+                                                   <th class="col-sm-4">Actions</th>
                                               </tr>
                                          </thead>
                                          <tbody>
                                          @foreach($authors as $author)
                                          <tr role="row" class="odd">
-                                              <td >
+                                              <td>
                                                    <p>
                                                         {{ $author->name }}
                                                    </p>
                                               </td>
-                                              <td class="v-align-middle ">
+                                              <td>
                                                   <ul class="list-group list-unstyled">
                                                        <li><a href="{{ route('authors.show', $author->id) }}">See</a> </li>
                                                        <li><a href="{{ route('authors.edit', $author->id) }}">Edit</a></li>   
