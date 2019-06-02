@@ -16,7 +16,6 @@ class AdminController extends Controller {
           // $user = User::select('name')->pluck('name')->take(1);
           return view('/admin/index', ['userCount' => $userCount, 'articleCount' => $articleCount, 'authorCount' => $authorCount /* 'user' => $user */]);
 
-          // Get string for name, and welcome only first name. EX: Welcome Taylor
      }
 }
 

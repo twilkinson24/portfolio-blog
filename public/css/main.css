@@ -289,6 +289,10 @@ section.about-me {
      }
 }
 
+.about-me .social-icons li a i {
+     font-size: 1.3rem;
+}
+
 /* Contact Page */
 section.contact {
      min-height: 60vh;

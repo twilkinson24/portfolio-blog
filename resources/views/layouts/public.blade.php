@@ -29,7 +29,7 @@
     <nav class="shadow py-2">
       <div class="container d-flex flex-column flex-sm-row justify-content-between">
         <div class="menu-site-name" id="site-name-lg">
-          <a href="/" class="text-decoration-none"><h3 class="text-white">TW</h3></a>
+          <a href="/" class="text-decoration-none"><h3 class="text-white font-weight-bold">TW</h3></a>
         </div>
         <div class="menu-site-name" id="site-name-sm">
             <a href="/" class="text-decoration-none"><h3 class="text-white">Taylor Wilkinson</h3></a>

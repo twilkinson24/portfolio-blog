@@ -3,7 +3,7 @@
  
 <section class="articles">
      <div class="container">
-         <div class="col-sm-8 mx-auto bg-light shadow-sm border-0 card card-default">
+         <div class="col-md-9 mx-auto bg-light shadow-sm border-0 card card-default">
              <div class="card-body">
                     <a href="{{ route('/') }}"><< admin</a>
                           <h3 class="text-center">Blog Posts</h3>
