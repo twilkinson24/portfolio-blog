@@ -35,14 +35,18 @@
       <h3 class="py-3 text-custom-dark">Some of my recent projects</h3>
     </div>
     <div class="container py-3">
-      <div class="row d-flex flex-column flex-md-row justify-content-center text-center" id="project-cards">
+      <div class="row d-flex flex-column flex-md-row justify-content-around text-center" id="project-cards">
         <!-- New Card -->
-        <div class="custom-col-4 card shadow">      
-          <a href="#" data-toggle="modal" data-target="#exampleModal1">
-          <img class="project-pic" src="/img/recipes.png" alt="share recipes project">
-          <h3 class="project-name text-custom-dark">Share Recipes</h3>
-          </a> 
-
+        <div class="col-md-5 p-0 card shadow">      
+          <div class="project-image">
+            <a href="#" data-toggle="modal" data-target="#exampleModal1">
+              <img class="project-pic" src="/img/recipes.png" alt="share recipes project">
+              <h3 class="project-name text-custom-dark">Share Recipes</h3>
+            </a> 
+          </div>
+          <div class="project-description">
+            <p class="p-3">A recipe sharing app built with PHP. This project helped me better understand the MVC pattern.</p>
+          </div>
         </div>
 
         <!-- Modal -->
@@ -79,11 +83,17 @@
           </div>
 
           <!-- New Card -->
-        <div class="custom-col-4 card shadow">
+        <div class="col-md-5 p-0 card shadow">
             <a href="#" data-toggle="modal" data-target="#exampleModal2">
-            <img class="project-pic" src="/img/weatherwatcher.png" alt="weather watcher project">
-            <h3 class="project-name">Weather Watcher</h3>
+              <div class="project-image">
+                <img class="project-pic" src="/img/weatherwatcher.png" alt="weather watcher project">
+                <h3 class="project-name">Weather Watcher</h3>
+              </div>
             </a> 
+            <div class="project-description">
+              <p class="p-3">A simple front-end web app for checking the weather. Built with React, the app fetches data from the Open Weather Map API. </p>
+            </div>
+
   
           </div>
   
@@ -121,10 +131,10 @@
               </div>
             </div>
           
-          <!-- New Card -->
-          <div class="custom-col-4 card shadow">
+          <!-- New Card --><!--
+          <div class="col-md-5 card shadow">
             hhh
-          </div>
+          </div> -->
       </div> <!-- End row -->
     </div>
   </section>

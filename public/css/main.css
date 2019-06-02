@@ -237,27 +237,20 @@ section.about-me {
      font-family: 'Kalam', Helvetica, sans-serif;
 }
 
-@media only screen and (min-width: 768px) {
-     .projects .custom-col-4 {
-          flex: 0 0 28%;
-          max-width: 28%;
-          margin: 0 2%;
-     }
-}
-
-@media only screen and (max-width: 1200px) {
-     .projects .custom-col-4 {
-          flex: 1 0 40%;
-          max-width: 40%;
-          margin: 1rem 2%;
-     }
-}
-
 @media only screen and (max-width: 768px) {
-     .projects .custom-col-4 {
-          max-width: 70%;
+     .projects .col-md-5 {
+          max-width: 90%;
           margin: 1rem auto;
      }
+}
+@media only screen and (max-width: 500px) {
+     .projects .col-md-5 {
+          max-width: 97%;
+          margin: 1rem auto;
+     }
+}
+.project-image {
+     position: relative;
 }
 
 .projects h3.project-name {
@@ -268,6 +261,11 @@ section.about-me {
      background-color: rgba(247, 239, 239, 0.5);
      margin: 0;
      padding: .3rem 0;
+}
+
+.projects .project-description p {
+     font-size: 1.3rem;
+     line-height: 2rem;
 }
 
 /* About Me Section */
