@@ -56,7 +56,7 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'taylorlwilkinson@yahoo.com'),
+        'address' => env('MAIL_FROM_ADDRESS', 'taylorwlearns@gmail.com'),
         'name' => env('MAIL_FROM_NAME', 'Admin'),
     ],
 
@@ -131,5 +131,13 @@ return [
     */
 
     'log_channel' => env('MAIL_LOG_CHANNEL'),
+
+    'stream' => [
+        'ssl' => [
+           'allow_self_signed' => true,
+           'verify_peer' => false,
+           'verify_peer_name' => false,
+        ],
+     ],
 
 ];

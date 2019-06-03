@@ -32,7 +32,7 @@
                             <div class="input-group-prepend">
                                 <div class="input-group-text"><i class="fa fa-comment text-custom-light"></i></div>
                             </div>
-                            <textarea class="form-control" id="message" name="message" placeholder="Your message" required></textarea>
+                            <textarea class="form-control" id="msg" name="msg" placeholder="Your message" required></textarea>
                         </div>
                     </div>
 

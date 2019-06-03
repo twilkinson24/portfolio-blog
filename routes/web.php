@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/welcome', function () {
+    return view('welcome');
+});
+
 Route::get('/blog/{text?}', ['uses' => 'PublicArticleController@publicIndex', 'as' => 'articles.publicIndex']);
 Route::get('/article/{title}/{id}', ['uses' => 'PublicArticleController@description', 'as' => 'articles.description']);
 
