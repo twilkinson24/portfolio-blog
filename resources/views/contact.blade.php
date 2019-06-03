@@ -5,7 +5,8 @@
     <div class="container">
         <h3 class="text-custom-dark">I'd love to hear from you!</h3>
         <!--Form with header-->
-        <form action="" method="post" class="col-md-7 mx-auto">
+        <form action="{{ route('contact.send') }}" method="post" class="col-md-7 mx-auto" id="contact-form" role="form" enctype="multipart/form-data">
+            {{ csrf_field() }}
             <div class="card border-0">
                 <div class="card-body p-3">
                     <!--Body-->
@@ -22,7 +23,7 @@
                             <div class="input-group-prepend">
                                 <div class="input-group-text"><i class="fa fa-envelope text-custom-light"></i></div>
                             </div>
-                            <input type="email" class="form-control" id="nombre" name="email" placeholder="john@gmail.com" required>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="john@gmail.com" required>
                         </div>
                     </div>
 
@@ -31,7 +32,7 @@
                             <div class="input-group-prepend">
                                 <div class="input-group-text"><i class="fa fa-comment text-custom-light"></i></div>
                             </div>
-                            <textarea class="form-control" placeholder="Your message" required></textarea>
+                            <textarea class="form-control" id="message" name="message" placeholder="Your message" required></textarea>
                         </div>
                     </div>
 

@@ -12,7 +12,14 @@ class ContactController extends Controller {
      }
 
      public function send() {
-          
+          try {
+               $data = ['name' => Input::get('name'), 'email' => Input::get('email'), 'msg' => Input::get('message')];
+               Mail::to(config('app.contact_mail'))->send(new TestEmail($data));
+               return redirect()->route('contact');
+          } catch (\Exception $e){
+               echo $e;
+               // return view('welcome');
+          }    
      }
 }
 

@@ -352,6 +352,10 @@ h1.page-title {
      color: rgb(0, 47, 255);
 }
 
+a.btn {
+     font-family: 'Lato', Helvetica, sans-serif;
+}
+
 .btn-primary {
      background-color: rgb(2, 9, 66);
      background-image: linear-gradient(to top left, rgb(2, 9, 66), rgb(0, 47, 255));
