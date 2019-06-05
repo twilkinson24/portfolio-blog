@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'contact_mail' => 'taylorlwilkinson@yahoo.com',
+    'contact_mail' => 'taylorwteaches@gmail.com',
 
     /*
     |--------------------------------------------------------------------------

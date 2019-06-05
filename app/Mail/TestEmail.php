@@ -13,9 +13,9 @@ class TestEmail extends Mailable {
      }
 
      public function build() {
-          $address = 'info@twilkinson.com';
+          $address = 'coding4tacos@gmail.com';
           $subject = 'New contact message from twilkinson.com';
-          $name = 'Admin';
+          $name = 'Test';
           return $this->view('emails.contact')->from($address, $name)->subject($subject)->with(['name' => $this->data['name'], 'email' => $this->data['email'], 'msg' => $this->data['msg']]);
      }
 }

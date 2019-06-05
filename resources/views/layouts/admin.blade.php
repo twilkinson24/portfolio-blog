@@ -34,7 +34,12 @@
             <a href="{{ URL::asset('blog') }}" class="nav-link">Blog</a>
           </li>
           <li>
-            <a href="#" class="nav-link">Log Out</a>
+            <a href="{{ url('/logout') }}" class="nav-link" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+              Logout
+            </a>
+            <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
+                {{ csrf_field() }}
+            </form>
           </li>
         </ul>
       </div>

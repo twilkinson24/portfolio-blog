@@ -15,7 +15,7 @@ class ContactController extends Controller {
           try {
                $data = ['name' => Input::get('name'), 'email' => Input::get('email'), 'msg' => Input::get('msg')];
                Mail::to(config('app.contact_mail'))->send(new TestEmail($data));
-               return redirect()->route('/');
+               return view('contact');
           } catch (\Exception $e){
                echo $e;
                // return view('welcome');
