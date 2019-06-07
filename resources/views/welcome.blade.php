@@ -6,12 +6,12 @@
   <section class="jumbotron rounded-0 mb-0 text-center">
     <div class="container">
       <h1 class="jumbotron-heading text-custom-dark" id="welcome-name">Taylor Wilkinson</h1>
-      <p class="lead">Passionate web developer looking for opportunities in Michigan or Remote to gain experience and collaborate with awesome people.</p>
-      <p class="jumbo-btns">
+      <p class="lead mx-auto">Passionate web developer looking for opportunities in Michigan or Remote to gain experience and collaborate with awesome people.</p>
+      <div class="jumbo-btns">
         <a href="#" class="btn btn-custom shadow-sm text-custom-dark border my-2">My Work</a>
         <a href="/contact" class="btn btn-custom shadow-sm text-custom-dark border my-2">Get In Touch</a>
-      </p>
-      <ul class="jumbotron-social-icons d-flex justify-content-around mx-auto">
+      </div>
+      <ul class="social-icons d-flex justify-content-around mx-auto py-3">
           <li>
                <a href="https://github.com/coding4tacos/" class="text-custom-dark" target="_blank"><i class="fab fa-github"></i> </a>
           </li>
@@ -23,7 +23,7 @@
        </li>
      </ul>
     </div>
-    <div class="down-icon rounded text-center">
+    <div class="down-icon rounded text-center my-5">
       <a href="#">
         <i class="fas fa-caret-down p-3 rounded-circle text-custom-dark"></i>
       </a>
@@ -149,20 +149,20 @@
             <p class="lead text-center text-md-left my-3 font-weight-bold text-custom-dark">A little more about Taylor Wilkinson</p>
             <p class="lead text-left about-me-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quidem laudantium ab error tempore fuga dicta labore reprehenderit, eius et earum, inventore quasi iusto eaque molestiae ad sapiente laborum sint.</p>
             <p class="text-center text-md-left"><a href="#">My Resume</a> | <a href="/contact">Contact</a></p>
-            <ul class="social-icons list-unstyled mx-auto m-md-0 col-8 col-md-6 d-flex justify-content-between p-0">
-              <li>
-                   <a href="https://github.com/coding4tacos/" class="text-custom-dark" target="_blank"><i class="fab fa-github"></i> </a>
-              </li>
-              <li>
-                   <a href="https://twitter.com/coding4tacos/" class="text-custom-dark" target="_blank"> <i class="fab fa-twitter"></i> </a>
-              </li>
-              <li>
-                   <a href="https://codepen.io/coding4tacos/" class="text-custom-dark" target="_blank"> <i class="fab fa-codepen"></i> </a>
-              </li>
-              <li>
-                   <a href="https://www.linkedin.com/in/taylor-wilkinson-a6478229/"  class="text-custom-dark" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-              </li>
-         </ul>
+            <ul class="social-icons list-unstyled m-md-0 col-5 col-md-5 d-flex justify-content-between p-0">
+                <li>
+                     <a href="https://github.com/coding4tacos/" class="text-custom-dark" target="_blank"><i class="fab fa-github"></i> </a>
+                </li>
+                <li>
+                     <a href="https://twitter.com/coding4tacos/" class="text-custom-dark" target="_blank"> <i class="fab fa-twitter"></i> </a>
+                </li>
+                <li>
+                     <a href="https://codepen.io/coding4tacos/" class="text-custom-dark" target="_blank"> <i class="fab fa-codepen"></i> </a>
+                </li>
+                <li>
+                     <a href="https://www.linkedin.com/in/taylor-wilkinson-a6478229/"  class="text-custom-dark" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+              </ul>
           </div>
         </div>
       </div>

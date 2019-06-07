@@ -167,16 +167,19 @@ nav ul li a:hover:after {
 }
 
 .jumbotron .container {
-     padding-top: 8rem;
+     padding-top: 3rem;
 }
 
 @media only screen and (max-width: 500px) {
+     .jumbotron {
+          padding: 1rem 0 0 0;
+     }
      .jumbotron h1.jumbotron-heading {
           display: none;
      }
 
      .jumbotron .container {
-          padding-top: 2rem;
+          padding-top: 0;
      }
 
      .jumbotron {
@@ -186,21 +189,31 @@ nav ul li a:hover:after {
 /* Animations added */
 .jumbotron p.lead {
      position: relative;
+     max-width: 65%;
      animation: 3s alternate slideFromLeft;
 }
 
-.jumbotron p.jumbo-btns {
+.jumbotron .jumbo-btns {
      position: relative;
      animation: 3s alternate slideFromRight;
 }
-
-.jumbotron ul.jumbotron-social-icons {
+@media only screen and (max-width: 500px) {
+     .jumbotron .jumbo-btns a {
+          display: block;
+          max-width: 150px;
+          margin: 0 auto;
+     }
+}
+.jumbotron ul.social-icons {
      list-style-type: none;
-     max-width: 600px;
-     font-size: 1.5rem;
+     max-width: 450px;
 }
 
-.jumbotron-social-icons a:hover {
+.social-icons a {
+     font-size: 1.6rem;
+}
+
+.social-icons a:hover {
      color: rgb(0, 47, 255);
      transition: all 300ms ease-in;
 }
@@ -287,14 +300,11 @@ section.about-me {
      }
 }
 
-.about-me .social-icons li a i {
-     font-size: 1.3rem;
-}
-
 /* Contact Page */
 section.contact {
      min-height: 60vh;
 }
+
 
 
 
@@ -410,7 +420,6 @@ a.btn {
 
 article .article-image {
      width: 60%;
-     border: 1px solid red;
 }
 
 @keyframes siteTitle {

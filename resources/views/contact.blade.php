@@ -4,6 +4,17 @@
 <section class="contact d-flex justify-content-center flex-column text-center">
     <div class="container">
         <h3 class="text-custom-dark">I'd love to hear from you!</h3>
+            <ul class="social-icons list-unstyled mx-auto col-3 d-flex justify-content-between p-0">
+                <li>
+                     <a href="https://github.com/coding4tacos/" class="text-custom-dark" target="_blank"><i class="fab fa-github"></i> </a>
+                </li>
+                <li>
+                     <a href="https://www.linkedin.com/in/taylor-wilkinson-a6478229/"  class="text-custom-dark" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+                <li>
+                        <a href="https://twitter.com/coding4tacos/" class="text-custom-dark" target="_blank"> <i class="fab fa-twitter"></i> </a>
+                </li>
+            </ul>
         <!--Form with header-->
         <form action="{{ route('contact.send') }}" method="post" class="col-md-7 mx-auto" id="contact-form" role="form" enctype="multipart/form-data">
             {{ csrf_field() }}
