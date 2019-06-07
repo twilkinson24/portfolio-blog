@@ -45,7 +45,8 @@
             </a> 
           </div>
           <div class="project-description">
-            <p class="p-3">A recipe sharing app built with PHP. This project helped me better understand the MVC pattern.</p>
+            <p class="p-3">A recipe sharing app built with PHP.</p>
+            <a href="#" data-toggle="modal" data-target="#exampleModal2">More Info</a>
           </div>
         </div>
 
@@ -69,11 +70,12 @@
                         A web app for people who want to share recipes. The main purpose of this project was to better understand MVC and improve my PHP skills.
                       </p>
                       <p class="tech-used-modal text-left">
-                        <span class="font-weight-bold">Tools:</span> PHP
+                        <p class="text-left"><span class="font-weight-bold">Tools:</span> PHP</p>
                       </p>
                     </div>
                   </div>
-
+                  <a href="https://github.com/coding4tacos/" class="text-custom-dark p-3" target="_blank"><i class="fab fa-github"></i></a>
+                  <a href="#" class="text-custom-dark p-3">See it live</a>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -91,7 +93,8 @@
               </div>
             </a> 
             <div class="project-description">
-              <p class="p-3">A simple front-end web app for checking the weather. Built with React, the app fetches data from the Open Weather Map API. </p>
+              <p class="p-3">A simple front-end web app for checking the weather. </p>
+              <a href="#" data-toggle="modal" data-target="#exampleModal2">More Info</a>
             </div>
 
   
@@ -121,10 +124,10 @@
                         </p>
                       </div>
                     </div>
-  
+                    <a href="https://github.com/coding4tacos/" class="text-custom-dark p-3" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#" class="text-custom-dark p-3">See it live</a>
                   </div>
                   <div class="modal-footer">
-                    <a href="https://coding4tacos.github.io/" class="btn btn-primary" target="_blank">See it in action!</a>
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                   </div>
                 </div>

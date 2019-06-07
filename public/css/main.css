@@ -277,8 +277,20 @@ section.about-me {
 }
 
 .projects .project-description p {
-     font-size: 1.3rem;
+     font-size: 1.2rem;
      line-height: 2rem;
+}
+
+.modal-body .fab {
+     font-size: 1.5rem;
+}
+.modal-body .text-custom-dark {
+     font-size: 1.2rem
+}
+.modal-body .fab:hover,
+.modal-body .text-custom-dark:hover {
+     color: rgb(0, 47, 255);
+     transition: all 300ms ease-in;
 }
 
 /* About Me Section */
