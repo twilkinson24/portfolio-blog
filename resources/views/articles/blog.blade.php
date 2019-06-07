@@ -7,7 +7,7 @@
       <h3 class="text-center">Blog</h3>
       <p class="lead text-center">A collection of my thoughts</p>
       <div class="row">
-        <div class="col-lg-8 border border-primary">
+        <div class="col-lg-10 mx-auto border border-primary">
               <div class="row">
               @if(!$articles->isEmpty())     
                   @for ($i = 0; $i < sizeof($articles); $i++)
@@ -16,7 +16,7 @@
                     @php($symbols = $articles[$i]->title)
                     @php($title = str_replace($symbolsArray, "", $symbols))
 
-                    <div class="col-lg-6 col-md-6">
+                    <div class="col-lg-6">
                         <aside>
                           <a href='{{ route("articles.description", [strtolower(str_replace(" ","-", trim($title))), $articles[$i]->id]) }}'>
                                 <img src="{{ URL::asset('./image/' . $articles[$i]->image) }}" alt="article image" class="img-responsive">
@@ -42,38 +42,7 @@
               </div>
           </div>
 
-          @php($recentPosts = DB::table('articles')->where('state_id', 2)->orderBy('id', 'desc')->get())
-
-          <div class="col-lg-4 border">           
-              <div class="widget-sidebar border border-danger">
-                <h2 class="title-widget-sidebar">Recent Posts</h2>
-                  <div class="content-widget-sidebar">
-                  <ul class="list-unstyled">
-                  @if(!$recentPosts->isEmpty())     
-                      @for ($i = 0; $i < sizeof($recentPosts) && $i < 3; $i++)
-
-                          @php($symbolsArray = array("¿","?","¡","!"))
-                          @php($symbols = $recentPosts[$i]->title)
-                          @php($title = str_replace($symbolsArray, "", $symbols))
-
-                          <li class="recent-post">
-                              <div class="post-img">
-                                  <a href='{{ route("articles.description", [strtolower(str_replace(" ","-", trim($title))), $recentPosts[$i]->id]) }}'>
-                                        <img src="{{ URL::asset('./image/' . $recentPosts[$i]->image) }}" alt="{{$recentPosts[$i]->image}}" class="img-responsive">
-                                  </a>
-                              </div>
-                              <a href='{{ route("articles.description", [strtolower(str_replace(" ","-", trim($title))), $recentPosts[$i]->id]) }}'><h5>{{ $recentPosts[$i]->title }}</h5></a>
-                              @php ($dateRecentPost = explode('-', explode(' ', $recentPosts[$i]->updated_at)[0]))
-                              <p><small><i class="fa fa-calendar" data-original-title="" title=""></i> {{ $dateRecentPost[2] . "-" . $dateRecentPost[1] . "-" . $dateRecentPost[0] }}</small></p>
-                            </li>
-                            <hr>
-
-                      @endfor
-                  @endif
-
-                  </ul>
-                  </div>
-                </div>
+          
             
                 <div class="widget-sidebar">
                   
