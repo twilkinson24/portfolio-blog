@@ -24,13 +24,13 @@
      </ul>
     </div>
     <div class="down-icon rounded text-center my-5">
-      <a href="#">
+      <a href="#projects" class="scroll">
         <i class="fas fa-caret-down p-3 rounded-circle text-custom-dark"></i>
       </a>
     </div>
   </section>
 
-  <section class="projects bg-light">
+  <section class="projects bg-light" id="projects">
     <div class="text-center">
       <h3 class="py-3 text-custom-dark">Some of my recent projects</h3>
     </div>
@@ -139,7 +139,7 @@
     </div>
   </section>
   <!-- ABOUT ME -->
-  <section class="about-me">
+  <section class="about-me" id="about-me">
       <div class="container">
         <div class="row d-flex justify-content-center">
           <div class="avatar-wrap m-3">
