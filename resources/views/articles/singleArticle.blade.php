@@ -3,8 +3,8 @@
 
 <section id="blog-section" >
     <div class="container">
-        <div class="row">
-            <div class="col-lg-9">
+        <div class="row justify-content-between">
+            <div class="col-lg-8">
                 <div class="row">
                     <article class="post" itemscope="" itemtype="https://schema.org/BlogPosting">
                         <header>
@@ -30,22 +30,7 @@
 
             @php($recentPosts = DB::table('articles')->where('state_id', 2)->orderBy('id', 'desc')->get())
 
-            <div class="col-lg-3">           
-                <div class="widget-sidebar">
-                        <ul class="social-icons list-unstyled mx-auto m-md-0 col-8 col-md-6 d-flex justify-content-between p-0">
-                                <li>
-                                     <a href="https://github.com/coding4tacos/" class="text-custom-dark" target="_blank"><i class="fab fa-github"></i> </a>
-                                </li>
-                                <li>
-                                     <a href="https://twitter.com/coding4tacos/" class="text-custom-dark" target="_blank"> <i class="fab fa-twitter"></i> </a>
-                                </li>
-                                <li>
-                                     <a href="https://codepen.io/coding4tacos/" class="text-custom-dark" target="_blank"> <i class="fab fa-codepen"></i> </a>
-                                </li>
-                                <li>
-                                     <a href="https://www.linkedin.com/in/taylor-wilkinson-a6478229/"  class="text-custom-dark" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                                </li>
-                           </ul>
+            <div class="col-lg-3 widget-sidebar">           
                   <h2 class="title-widget-sidebar">Recent Posts</h2>
                     <div class="content-widget-sidebar">
                     <ul class="list-unstyled">
@@ -59,24 +44,26 @@
                             <li class="recent-post">
                                 <div class="post-img">
                                     <a href='{{ route("articles.description", [strtolower(str_replace(" ","-", trim($title))), $recentPosts[$i]->id]) }}'>
+                                        <!--
                                           <img src="{{ URL::asset('./image/' . $recentPosts[$i]->image) }}" alt="{{$recentPosts[$i]->image}}" class="img-responsive">
+
+                                        -->
                                     </a>
                                 </div>
                                 <a href='{{ route("articles.description", [strtolower(str_replace(" ","-", trim($title))), $recentPosts[$i]->id]) }}'><h5>{{ $recentPosts[$i]->title }}</h5></a>
+                            <p>{{ $recentPosts[$i]->summary }}</p>
                                 @php ($dateRecentPost = explode('-', explode(' ', $recentPosts[$i]->updated_at)[0]))
                                 <p><small><i class="fa fa-calendar" data-original-title="" title=""></i> {{ $dateRecentPost[2] . "-" . $dateRecentPost[1] . "-" . $dateRecentPost[0] }}</small></p>
                               </li>
                               <hr>
-  
                         @endfor
                     @endif
-  
                     </ul>
-                    </div>
-                  </div>
+                    <p class="lead">Connect:</p>
+                    <a href="https://twitter.com/coding4tacos/" class="text-custom-dark" target="_blank"><span class="fab fa-twitter"></span></a>  <a href="https://www.linkedin.com/in/taylor-wilkinson-a6478229/"  class="text-custom-dark" target="_blank"><span class="fab fa-linkedin-in"></span></a>
+                </div>
+            </div>
 
-
-        </div>
     </div>
 </section>
 

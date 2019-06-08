@@ -6,7 +6,7 @@ html, body {
 body {
      position: relative;
      min-height: 100vh;
-     padding-bottom: 4rem;
+     padding-bottom: 6rem;
      font-family: 'Lato', Helvetica, sans-serif;
 }
 
@@ -44,6 +44,7 @@ nav {
      z-index: 1000;
      background-color: rgb(2, 9, 66);
      background-image: linear-gradient(to right, rgb(2, 9, 66), rgb(0, 47, 255));
+     margin-bottom: 1rem;
 }
 
 nav h3 {
@@ -213,7 +214,7 @@ nav ul li a:hover:after {
      font-size: 1.6rem;
 }
 
-.social-icons a:hover {
+.fab:hover {
      color: rgb(0, 47, 255);
      transition: all 300ms ease-in;
 }
@@ -317,7 +318,37 @@ section.contact {
      min-height: 60vh;
 }
 
+/* Blog */
+.articles table .col-md-2 {
+     width: auto;
+}
 
+article .article-image {
+     width: 60%;
+}
+
+@media only screen and (max-width: 992px) {
+     article.post {
+          padding: 0 1rem;
+     }
+     article.post header {
+          text-align: center;
+     }
+     article.post .article-image {
+          width: 70%;
+          display: block;
+          margin: 0 auto;
+     }
+
+     .widget-sidebar {
+          margin-top: 3rem;
+     }
+}
+
+.widget-sidebar a .fab {
+     font-size: 1.4rem;
+     padding-right: .5rem;
+}
 
 
 /* Admin Section */
@@ -426,13 +457,7 @@ a.btn {
      animation: 1s alternate siteTitle;
 }
 
-.articles table .col-md-2 {
-     width: auto;
-}
 
-article .article-image {
-     width: 60%;
-}
 
 @keyframes siteTitle {
      0% {
