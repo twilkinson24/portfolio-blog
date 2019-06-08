@@ -451,6 +451,7 @@ a.btn {
 }
 
 #welcome-name {
+     font-family: 'Kalam', Helvetica, sans-serif;
      position: relative;
      font-weight: bolder;
      font-size: 3rem;

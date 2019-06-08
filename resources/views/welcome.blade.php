@@ -6,7 +6,7 @@
   <section class="jumbotron rounded-0 mb-0 text-center">
     <div class="container">
       <h1 class="jumbotron-heading text-custom-dark" id="welcome-name">Taylor Wilkinson</h1>
-      <p class="lead mx-auto">Passionate web developer looking for opportunities in Michigan or Remote to gain experience and collaborate with awesome people.</p>
+      <p class="mx-auto">Passionate web developer looking for opportunities in Michigan or Remote to gain experience and collaborate with awesome people.</p>
       <div class="jumbo-btns">
         <a href="#" class="btn btn-custom shadow-sm text-custom-dark border my-2">My Work</a>
         <a href="/contact" class="btn btn-custom shadow-sm text-custom-dark border my-2">Get In Touch</a>
@@ -32,7 +32,7 @@
 
   <section class="projects bg-light" id="projects">
     <div class="text-center">
-      <h3 class="py-3 text-custom-dark">Some of my recent projects</h3>
+      <h2 class="py-3 text-custom-dark">Some of my recent projects</h2>
     </div>
     <div class="container py-3">
       <div class="row d-flex flex-column flex-md-row justify-content-around text-center" id="project-cards">
@@ -149,8 +149,10 @@
             <img src="img/avatar.jpg"  class="rounded-circle shadow-sm p-1 max250" alt="Taylor Wilkinson - Web Developer">
           </div>
           <div class="col-md-8 d-flex h-100 justify-content-center flex-column">
-            <p class="lead text-center text-md-left my-3 font-weight-bold text-custom-dark">A little more about Taylor Wilkinson</p>
-            <p class="lead text-left about-me-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quidem laudantium ab error tempore fuga dicta labore reprehenderit, eius et earum, inventore quasi iusto eaque molestiae ad sapiente laborum sint.</p>
+            <h2 class="text-center text-md-left my-3 font-weight-bold text-custom-dark">about me</h2>
+            <p class="lead text-left about-me-desc">I'm a lover of front-end development, especially anything JavaScript related.</p>
+            <p><span class="font-weight-bold">I regularly use: </span>HTML, CSS, Bootstrap, JavaScript, React, PHP, WordPress</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, magnam.</p>
             <p class="text-center text-md-left"><a href="#">My Resume</a> | <a href="/contact">Contact</a></p>
             <ul class="social-icons list-unstyled m-md-0 col-5 col-md-5 d-flex justify-content-between p-0">
                 <li>
