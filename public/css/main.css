@@ -249,6 +249,7 @@ section.about-me {
 
 .projects a h3 {
      font-family: 'Kalam', Helvetica, sans-serif;
+     font-weight: bolder;
 }
 
 @media only screen and (max-width: 768px) {
@@ -296,12 +297,16 @@ section.about-me {
 
 /* About Me Section */
 .avatar-wrap {
-     max-width: 200px;
      box-sizing: border-box !important;
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     text-align: center;
 }   
 
 .avatar-wrap img {
-     max-width: 100%;
+     max-width: 220px;
+     margin: 0 auto;
 }
 
 @media only screen and (max-width: 768px) {
@@ -311,7 +316,12 @@ section.about-me {
      .about-me-desc {
           padding: 0 1rem;
      }
+     .about-me ul.social-icons {
+          margin: 0 auto;
+     }
 }
+
+
 
 /* Contact Page */
 section.contact {

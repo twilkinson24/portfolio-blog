@@ -8,7 +8,7 @@
       <h1 class="jumbotron-heading text-custom-dark" id="welcome-name">Taylor Wilkinson</h1>
       <p class="mx-auto">Passionate web developer looking for opportunities in Michigan or Remote to gain experience and collaborate with awesome people.</p>
       <div class="jumbo-btns">
-        <a href="#" class="btn btn-custom shadow-sm text-custom-dark border my-2">My Work</a>
+        <a href="#projects" class="btn btn-custom shadow-sm text-custom-dark border my-2">My Work</a>
         <a href="/contact" class="btn btn-custom shadow-sm text-custom-dark border my-2">Get In Touch</a>
       </div>
       <ul class="social-icons d-flex justify-content-around mx-auto py-3">
@@ -145,16 +145,17 @@
   <section class="about-me" id="about-me">
       <div class="container">
         <div class="row d-flex justify-content-center">
-          <div class="avatar-wrap m-3">
-            <img src="img/avatar.jpg"  class="rounded-circle shadow-sm p-1 max250" alt="Taylor Wilkinson - Web Developer">
+          <div class="col-md-4 avatar-wrap m-3">
+            <img src="img/avatar.jpg"  class="rounded-circle shadow-sm max250" alt="Taylor Wilkinson - Web Developer">
           </div>
-          <div class="col-md-8 d-flex h-100 justify-content-center flex-column">
+          <div class="col-md-7 d-flex h-100 justify-content-center flex-column about-me-desc">
             <h2 class="text-center text-md-left my-3 font-weight-bold text-custom-dark">about me</h2>
-            <p class="lead text-left about-me-desc">I'm a lover of front-end development, especially anything JavaScript related.</p>
+            <p class="text-left">I'm a lover of front-end development, especially anything JavaScript related.</p>
+            <p class="lead">A life-long learner, I discovered a passion for coding and haven't looked back since. I love collaborating with others to build responsive web sites and web applications.
             <p><span class="font-weight-bold">I regularly use: </span>HTML, CSS, Bootstrap, JavaScript, React, PHP, WordPress</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, magnam.</p>
+            
             <p class="text-center text-md-left"><a href="#">My Resume</a> | <a href="/contact">Contact</a></p>
-            <ul class="social-icons list-unstyled m-md-0 col-5 col-md-5 d-flex justify-content-between p-0">
+            <ul class="social-icons list-unstyled m-md-0 col-5 d-flex justify-content-between p-0">
                 <li>
                      <a href="https://github.com/coding4tacos/" class="text-custom-dark" target="_blank"><i class="fab fa-github"></i> </a>
                 </li>
