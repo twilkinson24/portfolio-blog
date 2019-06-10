@@ -20,7 +20,7 @@
                         </header>
 
                         <div itemprop="articleBody">
-                            <div class="article-image"><img src="{{ URL::asset('./image/' . $article->image) }}" alt="Article image" width="750" class="img-responsive"></div>
+                        <div class="article-image"><img src="{{ URL::asset('./image/' . $article->image) }}" alt="{{ $article->alt_image }}" width="750" class="img-responsive"></div>
                             
                             <p>{!! $article->description !!}</p>
                         </div>

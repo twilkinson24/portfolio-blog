@@ -19,7 +19,7 @@
                     <div class="col-lg-6">
                         <aside>
                           <a href='{{ route("articles.description", [strtolower(str_replace(" ","-", trim($title))), $articles[$i]->id]) }}'>
-                                <img src="{{ URL::asset('./image/' . $articles[$i]->image) }}" alt="article image" class="img-responsive">
+                          <img src="{{ URL::asset('./image/' . $articles[$i]->image) }}" alt="{{ $articles[$i]->alt_image }}" class="img-responsive">
                           </a>
                           <div class="content-title">
                             <h3><a href='{{ route("articles.description", [strtolower(str_replace(" ","-", trim($title))), $articles[$i]->id]) }}'>{{ $articles[$i]->title }}</a></h3>
@@ -43,12 +43,7 @@
           </div>
 
           
-            
-                <div class="widget-sidebar">
-                  
-              <!-- saved in tarea -->
-                    
-                </div>  
+      
             
             </div>
           </div>

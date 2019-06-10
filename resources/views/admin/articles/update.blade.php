@@ -49,6 +49,17 @@
                                     @endif
                                 </div>
                             </div>
+                            <div class="form-group{{ $errors->has('alt_image') ? ' has-error' : '' }}">
+                                <label for="alt_image" class="col-md-6 control-label">Image Alternative Text</label>
+                                <div class="col-md-6">
+                                    <input id="alt_image" type="text" class="form-control" name="alt_image" value="{{ old('alt_image', $article->alt_image) }}" required>
+                                    @if ($errors->has('alt_image'))
+                                        <span class="help-block">
+                                            <strong>{{ $errors->first('alt_image') }}</strong>
+                                        </span>
+                                    @endif
+                                </div>
+                            </div>
                             <div class="form-group">
                                 <label for="image" class="col-md-4 control-label">Picture</label>
                                 <div class="col-md-6">
@@ -56,7 +67,7 @@
                                 </div>
                             </div>
                             <div class="form-group{{ $errors->has('summary') ? ' has-error' : '' }}">
-                                <label for="summary" class="col-md-4 control-label">Summary*</label>
+                                <label for="summary" class="col-md-4 control-label">Description*</label>
                                 <div class="col-md-6">
                                     <input id="summary" type="text" class="form-control" name="summary" value="{{ old('summary', $article->summary) }}" required>
                                     @if ($errors->has('summary'))
@@ -66,9 +77,9 @@
                                     @endif
                                 </div>
                             </div>
-                            <div class="form-group{{ $errors->has('description') ? ' has-error' : '' }} col-md-12">
-                                <label for="description" class="col-md-4 control-label">Description*</label>
-                                <textarea id="description" class="form-control" name="description" required>{{ old('description' , $article->description) }}</textarea>
+                            <div class="form-group{{ $errors->has('description') ? ' has-error' : '' }} col-12">
+                                <label for="description" class="col-md-4 control-label">Body*</label>
+                                <textarea id="description" class="form-control p-3" name="description" required>{{ old('description' , $article->description) }}</textarea>
                                 @if ($errors->has('description'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('description') }}</strong>
@@ -91,3 +102,4 @@
 
 
       @endsection
+

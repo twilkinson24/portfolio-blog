@@ -8,7 +8,7 @@ class AuthorRequest extends FormRequest {
      }
 
      public function rules() {
-          return ['name' => 'max:255|required', 'image' => 'required'];
+          return ['name' => 'max:255|required', 'image' => 'required', 'alt_image' => 'max:255|required'];
      }
 }
 

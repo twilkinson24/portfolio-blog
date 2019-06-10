@@ -8,7 +8,7 @@ class ArticleEditRequest extends FormRequest {
      }
 
      public function rules() {
-          return ['title' => 'max:255|required', 'summary' => 'max:255|required', 'description' => 'required'];
+          return ['title' => 'max:255|required', 'alt_image' => 'max:255|required', 'summary' => 'max:255|required', 'description' => 'required'];
      }
 }
 

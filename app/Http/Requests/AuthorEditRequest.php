@@ -8,7 +8,7 @@ class AuthorEditRequest extends FormRequest {
      }
 
      public function rules() {
-          return ['name' => 'max:255|required'];
+          return ['name' => 'max:255|required', 'alt_image' => 'max:255|required'];
      }
 }
 

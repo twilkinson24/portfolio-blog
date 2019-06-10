@@ -13,6 +13,10 @@
                                   <label class="col-md-10 margin-top-20" style="font-weight: bold;">Name</label>
                                   <p class="col-md-10">{{ $author->name }}</p>
                               </div>
+                              <div class="form-group col-md-6">
+                                <label class="col-md-10 margin-top-20" style="font-weight: bold;">Image Alternative Text</label>
+                                    <p class="col-md-10">{{ $author->alt_image }}</p>
+                                </div>
                               <div class="form-group">
                                  <img src="/image/{{ $author->image }}" height="70" width="70">
                               </div>

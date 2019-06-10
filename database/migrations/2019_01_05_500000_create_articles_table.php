@@ -17,6 +17,7 @@ class CreateArticlesTable extends Migration
            $table->increments('id');
            $table->string('title');
            $table->string('image');
+           $table->string('alt_image');
            $table->string('summary');
            $table->text('description');
            $table->integer('author_id')->unsigned();

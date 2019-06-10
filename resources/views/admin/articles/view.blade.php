@@ -22,7 +22,11 @@
                     <p class="col-md-10">{{ $article->title }}</p>
                 </div>
                 <div class="form-group col-md-6">
-                    <label class="col-md-10 margin-top-20" style="font-weight: bold;">Foto</label>
+                    <label class="col-md-10 margin-top-20" style="font-weight: bold;">Image Alternative Text</label>
+                    <p class="col-md-10">{{ $article->alt_image }}</p>
+                </div>
+                <div class="form-group col-md-6">
+                    <label class="col-md-10 margin-top-20" style="font-weight: bold;">Picture</label>
                     <img class="margin-left-15" src="/image/{{ $article->image }}" height="100" width="150">
                 </div>
                 <div class="form-group col-md-6">
