@@ -4,18 +4,18 @@
      <section class="users">
           <div class="container">
                <div class="card card-default col-lg-6 border-0 bg-light shadow-sm mx-auto">
-                    @if (session()->has('flash_notification.message'))
-                         <div class="alert alert-{{ session('flash_notification.level') }}">
-                             <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                             {!! session('flash_notification.message') !!}
-                         </div>
-                     @endif
                     <div class="card-heading">
                          <a href="{{ route('/') }}"><< admin</a>
                          <h3 class="text-center">Users</h3>
                          <div class="text-right">
-                         <a href="{{ route('users.create') }}" class="btn btn-complete text-primary"><i class="fa fa-plus"></i> New User</a>
+                              <a href="{{ route('users.create') }}" class="btn btn-complete text-primary"><i class="fa fa-plus"></i> New User</a>
                          </div>
+                         @if (session()->has('flash_notification.message'))
+                         <div class="alert alert-{{ session('flash_notification.level') }}">
+                             <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                             {!! session('flash_notification.message') !!}
+                         </div>
+                         @endif
                     </div>
                     <div class="card-body">
                          <div id="tableWithDynamicRows_wrapper" class="dataTables_wrapper form-inline no-footer">
