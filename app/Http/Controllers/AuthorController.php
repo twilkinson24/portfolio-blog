@@ -25,6 +25,7 @@ class AuthorController extends Controller {
         try {
             return view('admin/authors/create');
         } catch (\Exception $e) {
+            flash('Error. Try again.', 'danger');
             return redirect()->route('authors.main');
         }
      }
@@ -47,8 +48,10 @@ class AuthorController extends Controller {
             $author->image = $new_file_name;
             $author->save();
 
+            flash('Author saved successfully.', 'success');
             return redirect()->route('authors.main');   
         } catch (\Exception $e) {
+            flash('Error. Author not saved.', 'danger');
             return redirect()->route('authors.main');        
         }
      }
@@ -58,9 +61,11 @@ class AuthorController extends Controller {
             if($author) {
                 return view('admin/authors/view', ['author' => $author]);
             } else {
+                flash('Author not found.', 'danger');
                 return redirect()->route('authors.main');      
             }
         } catch (\Exception $e) {
+            flash('Error. Try again.', 'danger');
             return redirect()->route('authors.main');        
         }
      }    
@@ -70,9 +75,11 @@ class AuthorController extends Controller {
             if($author) {
                 return view('admin/authors/update', ['author' => $author]);
             } else {
+                flash('Error. Author not found.', 'danger');
                 return redirect()->route('authors.main');        
             }
         } catch (\Exception $e) {
+            flash('Error. Author not updated.', 'danger');
             return redirect()->route('authors.main');        
         }
      } 
@@ -110,9 +117,12 @@ class AuthorController extends Controller {
                 $author->image = $new_file_name;
            }
            $author->save();
+
+           flash('Author successfully updated', 'success');
            return redirect()->route('authors.main');        
 
         } catch (\Exception $e) {
+            flash('Error. Author not updated.', 'danger');
             return redirect()->route('authors.main');        
         }
      } 
@@ -124,10 +134,16 @@ class AuthorController extends Controller {
                if($articles->count() == 0) {
                    \Storage::delete($author->image); 
                    $author->delete();
-               } 
+
+                   flash('Author deleted successfully', 'success');
+               } else {
+                    flash('Error. Author not deleted, because there are still related posts.', 'danger');
+               }
+
                return redirect()->route('authors.main');
              } catch(\Exception $e) {
-               return redirect()->route('authors.main');
+                flash('Error. Author not deleted. Try again.', 'danger');
+                return redirect()->route('authors.main');
            }   
      } 
      

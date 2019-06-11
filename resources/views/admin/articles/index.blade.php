@@ -5,6 +5,12 @@
      <div class="container">
          <div class="col-md-9 mx-auto bg-light shadow-sm border-0 card card-default">
              <div class="card-body">
+                    @if (session()->has('flash_notification.message'))
+                    <div class="alert alert-{{ session('flash_notification.level') }}">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                        {!! session('flash_notification.message') !!}
+                    </div>
+                    @endif
                     <a href="{{ route('/') }}"><< admin</a>
                           <h3 class="text-center">Blog Posts</h3>
                           <div class="pull-right">
@@ -81,3 +87,4 @@
 
 
 @endsection
+

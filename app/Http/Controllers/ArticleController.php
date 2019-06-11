@@ -27,8 +27,10 @@ class ArticleController extends Controller {
         try {
             $states = State::orderBy('id')->get();
             $authors = Author::orderBy('id')->get();
+
             return view('admin/articles/create', ['states' => $states, 'authors' => $authors]);
         } catch (\Exception $e) {
+            flash('Error creating post. Try again.', 'danger');
             return redirect()->route('articles.main');
         }
      }
@@ -52,8 +54,10 @@ class ArticleController extends Controller {
             $article->image = $new_file_name;
             $article->save();
 
+            flash('Post successfully added.', 'success');
             return redirect()->route('articles.main');   
         } catch (\Exception $e) {
+            flash('Error. Post not created.', 'danger');
             return redirect()->route('articles.main');        
         }
      }
@@ -65,9 +69,11 @@ class ArticleController extends Controller {
                 $author = Author::find($article->author_id);
                 return view('admin/articles/view', ['article' => $article, 'state' => $state, 'author' => $author]);
             } else {
+                flash('Post not found.', 'danger');
                 return redirect()->route('articles.main');      
             }
         } catch (\Exception $e) {
+            flash('Error. Try again.', 'success');
             return redirect()->route('articles.main');        
         }
      }    
@@ -79,9 +85,11 @@ class ArticleController extends Controller {
                 $authors = Author::orderBy('name')->get();
                 return view('admin/articles/update', ['article' => $article, 'states' => $states, 'authors' => $authors]);
             } else {
+                flash('Post not found.', 'danger');
                 return redirect()->route('articles.main');        
             }
         } catch (\Exception $e) {
+            flash('Error. Post not updated.', 'danger');
             return redirect()->route('articles.main');        
         }
      } 
@@ -119,9 +127,11 @@ class ArticleController extends Controller {
                 $article->image = $new_file_name;
            }
            $article->save();
-           return redirect()->route('articles.main');        
 
+           flash('Error. Post not updated.', 'danger');
+           return redirect()->route('articles.main');        
         } catch (\Exception $e) {
+            flash('Error. Try again.', 'danger');
             return redirect()->route('articles.main');        
         }
      } 
@@ -130,9 +140,11 @@ class ArticleController extends Controller {
             $article = Article::find($id);
             \Storage::delete($article->image);
             $article->delete();
+
+            flash('Post deleted successfully.', 'success');
             return redirect()->route('articles.main'); 
-            
         } catch (\Exception $e) {
+            flash('Error. Post not deleted. Try again.', 'danger');
             return redirect()->route('articles.main');        
         }     
      } 
