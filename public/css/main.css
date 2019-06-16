@@ -196,7 +196,7 @@ nav ul li a:hover:after {
 
 .jumbotron .jumbo-btns {
      position: relative;
-     animation: 3s alternate slideFromRight;
+     animation: 2s alternate fadeIn; 
 }
 @media only screen and (max-width: 500px) {
      .jumbotron .jumbo-btns a {
@@ -465,7 +465,7 @@ a.btn {
      position: relative;
      font-weight: bolder;
      font-size: 3rem;
-     animation: 1s alternate siteTitle;
+     animation: 2s alternate siteTitle;
 }
 
 
@@ -484,6 +484,17 @@ a.btn {
           opacity: 1;
      }
    }
+@keyframes fadeIn {
+     0% {
+          opacity: 0;
+     }
+     50% {
+          opacity: .1;
+     }
+     100% {
+          opacity: 1;
+     }
+}
 
 @keyframes slideFromLeft {
      0% {left: -200px;}
