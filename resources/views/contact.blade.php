@@ -6,7 +6,7 @@
         <h3 class="text-custom-dark">I'd love to hear from you!</h3>
             <ul class="social-icons list-unstyled mx-auto col-3 d-flex justify-content-between p-0">
                 <li>
-                     <a href="https://github.com/coding4tacos/" class="text-custom-dark" target="_blank"><i class="fab fa-github"></i> </a>
+                     <a href="https://github.com/twilkinson24/" class="text-custom-dark" target="_blank"><i class="fab fa-github"></i> </a>
                 </li>
                 <li>
                      <a href="https://www.linkedin.com/in/taylor-wilkinson-a6478229/"  class="text-custom-dark" target="_blank"><i class="fab fa-linkedin-in"></i></a>

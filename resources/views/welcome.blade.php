@@ -74,7 +74,7 @@
                       </p>
                     </div>
                   </div>
-                  <a href="https://github.com/coding4tacos/" class="text-custom-dark p-3" target="_blank"><i class="fab fa-github"></i></a>
+                  <a href="https://github.com/twilkinson24/" class="text-custom-dark p-3" target="_blank"><i class="fab fa-github"></i></a>
                   <a href="#" class="text-custom-dark p-3">See it live</a>
                 </div>
                 <div class="modal-footer">
@@ -157,7 +157,7 @@
             <p class="text-center text-md-left"><a href="#">My Resume</a> | <a href="/contact">Contact</a></p>
             <ul class="social-icons list-unstyled m-md-0 col-5 d-flex justify-content-between p-0">
                 <li>
-                     <a href="https://github.com/coding4tacos/" class="text-custom-dark" target="_blank"><i class="fab fa-github"></i> </a>
+                     <a href="https://github.com/twilkinson24/" class="text-custom-dark" target="_blank"><i class="fab fa-github"></i> </a>
                 </li>
                 <li>
                      <a href="https://twitter.com/coding4tacos/" class="text-custom-dark" target="_blank"> <i class="fab fa-twitter"></i> </a>
