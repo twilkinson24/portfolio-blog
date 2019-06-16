@@ -84,8 +84,8 @@ return [
     |
     */
 
-   // 'username' => '',
-   // 'password' => '',
+    'username' => 'coding4tacos',
+    'password' => 'something',
 
     /*
     |--------------------------------------------------------------------------
