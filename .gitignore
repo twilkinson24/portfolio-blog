@@ -4,7 +4,7 @@
 /storage/*.key
 /vendor
 .env
-/config/mail.php
+/config
 .phpunit.result.cache
 Homestead.json
 Homestead.yaml
