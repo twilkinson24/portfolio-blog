@@ -11,6 +11,10 @@ class Article extends Model {
           return $this->belongsTo('App\State');
      }
 
+     public function category() {
+          return $this->belongsTo('App\Category');
+     }
+
      public function user() {
           return $this->belongsTo('App\User');
      }
@@ -19,6 +23,4 @@ class Article extends Model {
           return $this->belongsTo('App\Author');
      }
 }
-
-
 ?>

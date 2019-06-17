@@ -7,7 +7,6 @@
     <div class="container">
       <h1 class="jumbotron-heading text-custom-dark" id="welcome-name">Taylor Wilkinson</h1>
       <p class="mx-auto">Passionate web developer looking for opportunities in Michigan or Remote to gain experience and collaborate with awesome people.</p>
-      <p>TEST</p>
       <div class="jumbo-btns">
         <a href="#projects" class="btn btn-custom shadow-sm text-custom-dark border my-2">My Work</a>
         <a href="/contact" class="btn btn-custom shadow-sm text-custom-dark border my-2">Get In Touch</a>

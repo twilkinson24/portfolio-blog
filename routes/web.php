@@ -81,4 +81,19 @@ Route::group(['middleware' => ['auth', 'admin'], 'prefix' => 'admin'],
                 Route::post('/authors/update/{id}', ['uses' => 'AuthorController@update', 'as' => 'authors.update']);
                 // delete Author
                 Route::get('/authors/destroy/{id}', ['uses' => 'AuthorController@destroy', 'as' => 'authors.destroy']);  
+
+                 // Categories
+                 Route::get('/categories/', ['uses' => 'CategoryController@index', 'as' => 'categories.main']);
+                 // Create Author
+                 Route::get('/categories/create', ['uses' => 'CategoryController@create', 'as' => 'categories.create']);
+                 // Save Category to DB
+                 Route::post('/categories/store', ['uses' => 'CategoryController@store', 'as' => 'categories.store']);
+                 // show
+                 Route::get('/categories/show/{id}', ['uses' => 'CategoryController@show', 'as' => 'categories.show']);
+                 // edit Category
+                 Route::get('/categories/edit/{id}', ['uses' => 'CategoryController@edit', 'as' => 'categories.edit']);
+                 // update Category
+                 Route::post('/categories/update/{id}', ['uses' => 'CategoryController@update', 'as' => 'categories.update']);
+                 // delete Category
+                 Route::get('/categories/destroy/{id}', ['uses' => 'CategoryController@destroy', 'as' => 'categories.destroy']);  
             });
