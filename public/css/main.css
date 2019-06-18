@@ -188,16 +188,12 @@ nav ul li a:hover:after {
      }
 }
 /* Animations added */
-.jumbotron p.lead {
+.jumbotron p {
      position: relative;
      max-width: 65%;
-     animation: 3s alternate slideFromLeft;
+     animation: 2s alternate fadeIn;
 }
 
-.jumbotron .jumbo-btns {
-     position: relative;
-     animation: 3s alternate slideFromRight;
-}
 @media only screen and (max-width: 500px) {
      .jumbotron .jumbo-btns a {
           display: block;
@@ -465,10 +461,8 @@ a.btn {
      position: relative;
      font-weight: bolder;
      font-size: 3rem;
-     animation: 1s alternate siteTitle;
+     animation: 2s alternate siteTitle;
 }
-
-
 
 @keyframes siteTitle {
      0% {
@@ -483,17 +477,18 @@ a.btn {
           top: 0;
           opacity: 1;
      }
-   }
+}
 
-@keyframes slideFromLeft {
-     0% {left: -200px;}
-     100% {left: 0px;}
-   }
-
-   @keyframes slideFromRight {
-     0% {left: 200px;}
-     100% {left: 0px;}
-   }
-
+@keyframes fadeIn {
+     0% {
+          opacity: 0;
+     }
+     50% {
+          opacity: .1;
+     }
+     100% {
+          opacity: 1;
+     }
+}
 
    
