@@ -4,7 +4,7 @@
 <section class="authors">
     <div class="container">
         <div class="col-sm-6 mx-auto bg-light shadow-sm border-0 card card-default">
-            <div class="card-body">
+            <div class="card-header">
                 <a href="{{ route('/') }}"><< admin</a>
                 <a href="{{ route('authors.main') }}"><< authors</a>
                         <h3 class="text-center">Create Author</h3>

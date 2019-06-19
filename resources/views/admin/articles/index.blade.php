@@ -4,7 +4,7 @@
 <section class="articles">
      <div class="container">
          <div class="col-md-9 mx-auto bg-light shadow-sm border-0 card card-default">
-             <div class="card-heading">
+             <div class="card-header">
                     <a href="{{ route('/') }}"><< admin</a>
                     <h3 class="text-center">Blog Posts</h3>
                     <div class="pull-right">
