@@ -5,7 +5,7 @@
   <!--/ header-->
   <section class="text-center">
       <h1 class="page-title">Welcome {{ Auth::user()->name }}</h1>
-      <p class="lead text-secondary my-2">Dashboard</p>
+      <p class="lead text-secondary">Dashboard</p>
   </section>
   <section class="admin-dashboard">
     <div class="container col-8">
