@@ -16,6 +16,10 @@
                     <label class="col-md-10" style="font-weight: bold;">Author</label>
                     <p class="col-md-10">{{ $author->name }}</p>
                 </div>
+                <div class="form-group margin-top-40 col-md-6">
+                    <label class="col-md-10" style="font-weight: bold;">Category</label>
+                    <p class="col-md-10">{{ $category->name }}</p>
+                </div>
 
                 <div class="form-group col-md-6">
                     <label class="col-md-10 margin-top-20" style="font-weight: bold;">Title</label>

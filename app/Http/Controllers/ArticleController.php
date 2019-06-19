@@ -8,6 +8,7 @@ use App\User;
 use App\Article;
 use App\Author;
 use App\State;
+use App\Category;
 use Carbon\Carbon;
 
 class ArticleController extends Controller {
@@ -27,8 +28,8 @@ class ArticleController extends Controller {
         try {
             $states = State::orderBy('id')->get();
             $authors = Author::orderBy('id')->get();
-
-            return view('admin/articles/create', ['states' => $states, 'authors' => $authors]);
+            $categories = Category::orderBy('id')->get();
+            return view('admin/articles/create', ['states' => $states, 'authors' => $authors, 'categories' => $categories]);
         } catch (\Exception $e) {
             flash('Error creating post. Try again.', 'danger');
             return redirect()->route('articles.main');
@@ -67,7 +68,8 @@ class ArticleController extends Controller {
             if($article) {
                 $state = State::find($article->state_id);
                 $author = Author::find($article->author_id);
-                return view('admin/articles/view', ['article' => $article, 'state' => $state, 'author' => $author]);
+                $category = Category::find($article->category_id);
+                return view('admin/articles/view', ['article' => $article, 'state' => $state, 'author' => $author, 'category' => $category]);
             } else {
                 flash('Post not found.', 'danger');
                 return redirect()->route('articles.main');      
@@ -83,7 +85,8 @@ class ArticleController extends Controller {
             if($article) {
                 $states = State::orderBy('name')->get();
                 $authors = Author::orderBy('name')->get();
-                return view('admin/articles/update', ['article' => $article, 'states' => $states, 'authors' => $authors]);
+                $categories = Category::orderBy('name')->get();
+                return view('admin/articles/update', ['article' => $article, 'states' => $states, 'authors' => $authors, 'categories' => $categories]);
             } else {
                 flash('Post not found.', 'danger');
                 return redirect()->route('articles.main');        

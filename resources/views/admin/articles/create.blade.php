@@ -45,6 +45,17 @@
                                            </div>
                                        </div>
 
+                                       <div class="form-group">
+                                            <label for="category_id" class="col-md-16 control-label">Category*</label>
+                                            <div class="col-md-6">
+                                                 <select id="category_id" name="category_id" class="form-control capitalize">
+                                                    @foreach ($categories as $category)
+                                                        <option value="{{ $category->id }}">{{ $category->name }}</option>
+                                                    @endforeach
+                                                </select>
+                                            </div>
+                                        </div>
+
                                        <div class="form-group{{ $errors->has('alt_image') ? ' has-error' : '' }}">
                                             <label for="alt_image" class="col-md-6 control-label">Image Alternative Text</label>
                                             <div class="col-md-6">

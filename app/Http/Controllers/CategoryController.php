@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Input;
 use App\Http\Requests\CategoryRequest;
 use App\Http\Requests\CategoryEditRequest;
 use App\Category;
+use App\Article;
 
 class CategoryController extends Controller {
      public function __construct() {
@@ -20,28 +21,86 @@ class CategoryController extends Controller {
           }
      }
 
-      public function create() {
-          
+     public function create() {
+          try {
+               return view('admin/categories/create');
+          } catch(\Exception $e) {
+               flash('Error. Try again.', 'danger');
+               return redirect()->route('categories.main');
+          }
      }
 
-     public function store() {
-          
+     public function store(CategoryRequest $request) {
+          try {
+              $category = new Category($request->all());
+              $category->save();
+              flash('Category created!');
+              return redirect()->route('categories.main');
+          } catch(\Exception $e) {
+               flash('Error. Try again.', 'danger');
+               return redirect()->route('categories.main');
+          }
      }
 
-     public function edit() {
-          
+     public function edit($id) {
+          try {
+               $category = Category::find($id);
+              if($category) {
+                    return view('admin/categories/update', ['category' => $category]);
+              } else {
+                    flash('Error. Category not found.', 'danger');
+                    return redirect()->route('categories.main');
+              }
+           } catch(\Exception $e) {
+                    flash('Error. Try again.', 'danger');
+                    return redirect()->route('categories.main');
+           }
      }
 
-     public function update() {
-          
+     public function update(CategoryEditRequest $request, $id) {
+          try {
+               $category = Category::find($id);
+               $category->fill($request->all());
+               $category->save();
+              flash('Category updated', 'primary');
+              return redirect()->route('categories.main');
+           } catch(\Exception $e) {
+                    flash('Error. Try again.', 'danger');
+                    return redirect()->route('categories.main');
+           }
      }
 
-     public function show() {
-          
+     public function show($id) {
+          try {
+               $category = Category::find($id);
+               if($category) {
+                    return view('admin/categories/view', ['category' => $category]);
+               } else {
+                    flash('Error. Category not found.', 'danger');
+                    return redirect()->route('categories.main');
+               }
+          } catch(\Exception $e) {
+               flash('Error. Try again.', 'danger');
+               return redirect()->route('categories.main');
+          }
      }
 
-     public function destroy() {
-          
+     public function destroy($id) {
+          try {
+               $category = Category::find($id);
+               $articles = Article::where('category_id', $category->id)->get();
+               if($articles->count() == 0) {
+                    $category->delete();
+                    flash('Category deleted', 'primary');
+                    return redirect()->route('categories.main');
+               } else {
+                    flash('Error. Category could not be deleted. Related articles', 'danger');
+                    return redirect()->route('categories.main');
+               }
+          } catch(\Exception $e) {
+               flash('Error. Try again.', 'danger');
+               return redirect()->route('categories.main');
+          }
      }
 }
 

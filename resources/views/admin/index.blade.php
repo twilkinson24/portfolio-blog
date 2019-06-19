@@ -70,6 +70,26 @@
                     </div>
                 </a>
             </div>
+            <!-- New Card -- Categories -->
+            <div class="card card-primary col-sm-4 p-0 m-2">
+                    <div class="card-heading p-2">
+                        <div class="d-flex justify-content-center">
+                            <div class="admin-dash-icon mx-2">
+                                <i class="fa fa-file fa-5x"></i>
+                            </div>
+                            <div class="admin-dash-info mx-1 pt-1">
+                                <p class="lead m-0">{{ $categoryCount }}</p>
+                                <p class="p-0">Categories</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="{{ URL::asset('/admin/categories') }}">
+                        <div class="card-footer text-center">
+                            <p class="m-0">Details</p>
+                            <div class="clearfix"></div>
+                        </div>
+                    </a>
+                </div>
         </div>
     </div>
 </section>
