@@ -1,5 +1,7 @@
 
 @extends('layouts.public')
+@section('title', 'Web Developer')
+@section('description', 'Taylor Wilkinson, web developer')
 @section('content')
     
   <!--/ header-->

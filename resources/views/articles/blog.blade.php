@@ -1,10 +1,23 @@
 @extends('layouts.public')
+@section('title', 'Blog')
+@section('description', 'Blog page for Taylor Wilkinson, web developer')
 @section('content')
 
 <section id="blog-section bg-white" >
   <div class="container">
     <h1 class="text-center">Recent Posts</h1>
     <p class="lead text-center">A collection of my thoughts on web development</p>
+    <div>
+      <div class="widget-sidebar">
+        <h2 class="title-widget-sidebar">Categorías</h2>
+
+        @php ($categories = DB::table('categories')->orderBy('name')->get())
+        @foreach ($categories as $category)
+            <a href="{{ route('articles.publicIndex', $category->name) }}">{{ $category->name }}</a>
+        @endforeach
+         
+     </div> 
+    </div>
     <div class="row">
       <div class="col-9 mx-auto">
             <div class="row">
@@ -28,8 +41,6 @@
                             <span class="pull-right">
                                 @php ($date = explode('-', explode(' ', $articles[$i]->updated_at)[0]))
                                 <span style="font-size: 13px;color: #fff; float: left; margin-top: 22px;">{{ $date[2] . "-" . $date[1] . "-" . $date[0] }}</span>
-                                <!-- <a href="#" data-toggle="tooltip" data-placement="left" title="Comments"><i class="fa fa-comments" ></i> 30</a>
-                                <a href="#" data-toggle="tooltip" data-placement="right" title="Loved"><i class="fa fa-heart"></i> 20</a>     -->              
                             </span>
                         </div>
                       </aside>

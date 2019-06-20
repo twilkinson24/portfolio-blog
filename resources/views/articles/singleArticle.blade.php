@@ -1,4 +1,6 @@
 @extends('layouts.public')
+@section('title', $article->title)
+@section('description', $article->summary)
 @section('content')
 
 <section id="blog-section" >

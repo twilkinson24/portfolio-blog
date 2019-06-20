@@ -5,8 +5,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TW - Web Dev</title>
-  <meta name="description" content="Taylor Wilkinson is an aspiring web developer">
+  <title>TW | @yield('title')</title>
+  <meta name="description" content="@yield('description')">
   <meta name="keywords" content="web developer portfolio, web developer, css, JavaScript, React, ReactJS, Front-End Web Development, PHP, Laravel">
 
 <link rel="shortcut icon" href="{{ URL::asset('./img/logo/icon.ico') }}" type="image/x-icon">

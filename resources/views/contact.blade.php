@@ -1,4 +1,6 @@
 @extends('layouts.public')
+@section('title', 'Contact')
+@section('description', 'Contact page for Taylor Wilkinson, web developer')
 @section('content')
 
 <section class="contact d-flex justify-content-center flex-column text-center">
