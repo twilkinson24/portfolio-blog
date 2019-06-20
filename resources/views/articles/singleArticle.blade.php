@@ -30,9 +30,10 @@
                 </div>
             </div>
 
+            @php($categories = DB::table('categories')->orderBy('name')->get())
             @php($recentPosts = DB::table('articles')->where('state_id', 2)->orderBy('id', 'desc')->get())
 
-            <div class="col-lg-3 widget-sidebar">           
+            <div class="col-lg-3 widget-sidebar">   
                   <h2 class="title-widget-sidebar">Recent Posts</h2>
                     <div class="content-widget-sidebar">
                     <ul class="list-unstyled">
@@ -44,14 +45,6 @@
                             @php($title = str_replace($symbolsArray, "", $symbols))
   
                             <li class="recent-post">
-                                <div class="post-img">
-                                    <a href='{{ route("articles.description", [strtolower(str_replace(" ","-", trim($title))), $recentPosts[$i]->id]) }}'>
-                                        <!--
-                                          <img src="{{ URL::asset('./image/' . $recentPosts[$i]->image) }}" alt="{{$recentPosts[$i]->image}}" class="img-responsive">
-
-                                        -->
-                                    </a>
-                                </div>
                                 <a href='{{ route("articles.description", [strtolower(str_replace(" ","-", trim($title))), $recentPosts[$i]->id]) }}'><h5>{{ $recentPosts[$i]->title }}</h5></a>
                             <p>{{ $recentPosts[$i]->summary }}</p>
                                 @php ($dateRecentPost = explode('-', explode(' ', $recentPosts[$i]->updated_at)[0]))
@@ -61,6 +54,16 @@
                         @endfor
                     @endif
                     </ul>
+                    <h2 class="title-widget-sidebar">Categories</h2>
+                    <ul class="list-unstyled">
+                        @if(!$recentPosts->isEmpty())     
+                            @foreach ($categories as $category)
+                                <li class="category">
+                                    <a href='{{ route('articles.publicIndex', $category->name) }}'><h5>{{ $category->name }}</h5></a>
+                                </li>
+                            @endforeach
+                        @endif
+                    </ul>        
                     <p class="lead">Connect:</p>
                     <a href="https://twitter.com/coding4tacos/" class="text-custom-dark" target="_blank"><span class="fab fa-twitter"></span></a>  <a href="https://www.linkedin.com/in/taylor-wilkinson-a6478229/"  class="text-custom-dark" target="_blank"><span class="fab fa-linkedin-in"></span></a>
                 </div>

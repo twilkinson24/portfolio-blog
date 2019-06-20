@@ -8,14 +8,12 @@
     <h1 class="text-center">Recent Posts</h1>
     <p class="lead text-center">A collection of my thoughts on web development</p>
     <div>
-      <div class="widget-sidebar">
-        <h2 class="title-widget-sidebar">Categorías</h2>
-
-        @php ($categories = DB::table('categories')->orderBy('name')->get())
-        @foreach ($categories as $category)
-            <a href="{{ route('articles.publicIndex', $category->name) }}">{{ $category->name }}</a>
-        @endforeach
-         
+      <div class="categories-list text-center">
+        <h2 class="categories-list-title">Categories:</h2>
+          @php ($categories = DB::table('categories')->orderBy('name')->get())
+          @foreach ($categories as $category)
+              <a href="{{ route('articles.publicIndex', $category->name) }}" class="category">{{ $category->name }}</a>
+          @endforeach
      </div> 
     </div>
     <div class="row">

@@ -325,6 +325,17 @@ section.contact {
 }
 
 /* Blog */
+.categories-list {
+     padding-bottom: 1rem;
+}
+
+h2.categories-list-title  {
+     display: inline-block;
+     font-size: 1rem;
+}
+
+.categories-list a.category { margin: 0 .5rem}
+
 .articles table .col-md-2 {
      width: auto;
 }
