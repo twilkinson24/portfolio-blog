@@ -45,8 +45,11 @@
                                                   <!-- Botones de accion -->
                                                   <a href="{{ route('users.show', $user->id) }}">See</a>
                                                   <a href="{{ route('users.edit', $user->id) }}">Edit</a>
+                                                  @if(Auth::user()->email == $user->email)
+                                                       <a href="{{ route('users.editpassword', $user->id) }}">Edit Password</a>
+                                                  @endif
                                                   @if(Auth::user()->role_id == 1)
-                                                       <a href="{{ route('users.destroy', $user->id) }}" onclick="return confirm('Seguro?')" onkeypress="return confirm('Seguro?')">Delete</a>
+                                                       <a href="{{ route('users.destroy', $user->id) }}" onclick="return confirm('Delete user?')" onkeypress="return confirm('Delete User?')">Delete</a>
                                                   @endif
                                              </td>
                                         </tr>

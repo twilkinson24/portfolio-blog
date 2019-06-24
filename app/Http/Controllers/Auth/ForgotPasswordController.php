@@ -1,9 +1,15 @@
 <?php
 
 namespace App\Http\Controllers\Auth;
-
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\SendsPasswordResetEmails;
+use App\Http\Requests\UserResetPasswordRequest;
+use Illiminate\Support\Facades\Input;
+use Mail;
+use App\User;
+use App\PasswordReset;
+use DB;
+
 
 class ForgotPasswordController extends Controller
 {
@@ -28,5 +34,25 @@ class ForgotPasswordController extends Controller
     public function __construct()
     {
         $this->middleware('guest');
+    }
+
+    public function getEmail() {
+        try {
+            return view('auth/passwords/email');
+        } catch(\Exception $e) {
+            return view('welcome');
+        }
+    }
+
+    public function postEmail() {
+
+    }
+
+    public function getReset($token) {
+
+    }
+
+    public function postReset(UserResetPasswordRequest $request) {
+
     }
 }

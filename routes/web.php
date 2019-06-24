@@ -27,8 +27,14 @@ Route::get('/article/{title}/{id}', ['uses' => 'PublicArticleController@descript
 Route::get('/contact', function () {
     return view('contact');
 });
-
 Route::post('/contact/send', ['uses' => 'ContactController@send', 'as' => 'contact.send']);
+
+// Login
+Route::get('/password/email', ['uses' => 'Auth\ForgotPasswordController@getemail', 'as' => 'password.getemail']);
+Route::post('/password/email', ['uses' => 'Auth\ForgotPasswordController@postemail', 'as' => 'password.postemail']);
+Route::get('/password/reset/{token}', ['uses' => 'Auth\ForgotPasswordController@getreset', 'as' => 'password.getreset']);
+Route::post('/password/reset', ['uses' => 'Auth\ForgotPasswordController@postreset', 'as' => 'password.postreset']);
+
 
 //ADMIN & ARTICLE ROUTES
 Route::group(['middleware' => ['auth', 'admin'], 'prefix' => 'admin'], 
@@ -50,6 +56,11 @@ Route::group(['middleware' => ['auth', 'admin'], 'prefix' => 'admin'],
                 Route::post('/users/update/{id}', ['uses' => 'UserController@update', 'as' => 'users.update']);
                 // delete user
                 Route::get('/users/destroy/{id}', ['uses' => 'UserController@destroy', 'as' => 'users.destroy']);  
+                // change password
+                Route::get('/users/editpassword/{id}', ['uses' => 'UserController@editpassword', 'as' => 'users.editpassword']);  
+                // save changed password
+                Route::post('/users/updatepassword/{id}', ['uses' => 'UserController@updatepassword', 'as' => 'users.updatepassword']);  
+
 
                 // Articles
                 Route::get('/articles/', ['uses' => 'ArticleController@index', 'as' => 'articles.main']);

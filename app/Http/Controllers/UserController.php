@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
 use App\Http\Requests\UserRequests;
 use App\Http\Requests\UserEditRequest;
+use App\Http\Requests\UserPasswordRequest;
 use App\User;
 use App\Article;
 use App\Role;
@@ -104,6 +105,41 @@ class UserController extends Controller {
             return redirect()->route('users.main');
         }
      } 
+    
+     public function editpassword($id) {
+        try {
+            $user = User::find($id);
+            if($user) {
+                return view('admin/users/password', ['user' => $user]);
+            } else {
+                flash('Error. User not found.', 'danger');
+                return redirect()->route('users.main');
+            }
+        } catch(\Exception $e) {
+            flash('Error. Try again.', 'danger');
+            return redirect()->route('users.main');
+        }
+     }
+
+     public function updatepassword(UserPasswordRequest $request, $id) {
+        try {
+            $user = User::find($id);
+            $user->fill($request->all());
+            $user = User::find($id);
+            if(\Hash::check(Input::get('password'), $user->password)) {
+               $user->password = bcrypt(Input::get('new_password'));
+               $user->save();
+               flash('Password changed successfully', 'primary');
+               return redirect()->route('users.main');
+            } else {
+               flash('Error. Invalid password', 'danger');
+               return redirect()->route('users.main');
+            }
+        } catch(\Exception $e) {
+            flash('Error. Try again.', 'danger');
+            return redirect()->route('users.main');
+        }
+     }
 }
 
 ?>
