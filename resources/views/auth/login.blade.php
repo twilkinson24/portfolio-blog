@@ -1,11 +1,7 @@
 @extends('layouts.public')
-
-@section('title', 'Login')
-    
+@section('title', 'Login') 
 @section('description', 'Ingresar al admin panel')
-
 @section('content')
-
 
 <section class="text-center">
     <h1>Log In</h1>
@@ -44,6 +40,9 @@
                         </div>
                     </div>
                 </form>
+                <div class="text-center">
+                    <a href="{{ route('password.getemail') }}">Forgot password?</a>
+                </div>
             </div>
         </div>  
     </div>
