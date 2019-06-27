@@ -30,7 +30,6 @@
                                     <strong>{{ $errors->first('password') }}</strong>
                                 </span>
                             @endif
-                            <!-- Olvidaste tu contrasena? -->
                     </div>
                     <div class="form-group">
                         <div class="text-center">
