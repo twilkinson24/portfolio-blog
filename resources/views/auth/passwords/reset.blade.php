@@ -1,6 +1,6 @@
-@extends('layouts.public');
+@extends('layouts.public')
 @section('title', 'Reset Password')
-@section('content');
+@section('content')
 
 <section class="height-basic">
      <div class="container" style="margin-top: 180px; margin-bottom: 180px;">
