@@ -56,22 +56,20 @@
                                              </p>
                                         </td>
                                         <td class="v-align-middle buttons-table">
-                                        <ul class="list-group list-unstyled">
-                                             <li><a href="{{ route('articles.show', $article->id) }}">See</a> </li>
-                                             
-                                             <li><a href="{{ route('articles.edit', $article->id) }}">
-                                                  Edit
-                                             </a></li> 
-                                             
-                                             @if(Auth::user()->role_id == 1)
-                                                  <li><a href="{{ route('articles.destroy', $article->id) }}" onclick="return confirm('Delete the article?')" onkeypress="return confirm('Delete the article?')">
-                                                       Delete
-                                                  </a></li>
-                                             @endif
-                                        </ul>
-                                             
+                                             <ul class="list-group list-unstyled">
+                                                  <li><a href="{{ route('articles.show', $article->id) }}">See</a> </li>
+                                                  
+                                                  <li><a href="{{ route('articles.edit', $article->id) }}">
+                                                       Edit
+                                                  </a></li> 
+                                                  
+                                                  @if(Auth::user()->role_id == 1)
+                                                       <li><a href="{{ route('articles.destroy', $article->id) }}" onclick="return confirm('Delete the article?')" onkeypress="return confirm('Delete the article?')">
+                                                            Delete
+                                                       </a></li>
+                                                  @endif
+                                             </ul>                   
                                         </td>
-                                        
                                    </tr>
                                    @endforeach
                                    </tbody>

@@ -84,7 +84,7 @@
                     <a href="https://twitter.com/coding4tacos/" class="text-custom-dark" target="_blank"><span class="fab fa-twitter"></span></a>  <a href="https://www.linkedin.com/in/taylor-wilkinson-a6478229/"  class="text-custom-dark" target="_blank"><span class="fab fa-linkedin-in"></span></a>
                 </div>
             </div>
-
+        </div>
     </div>
 </section>
 

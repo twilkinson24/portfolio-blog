@@ -26,7 +26,6 @@
                                 </div>
                             </div>
                             @endif
-
                             <div class="form-group">
                                 <label for="author_id" class="col-md-4 control-label">Authors*</label>
                                 <div class="col-md-6">
@@ -37,7 +36,6 @@
                                     </select>
                                 </div>
                             </div>
-
                             <div class="form-group{{ $errors->has('title') ? ' has-error' : '' }}">
                                 <label for="title" class="col-md-4 control-label">Title*</label>
                                 <div class="col-md-6">
@@ -49,7 +47,6 @@
                                     @endif
                                 </div>
                             </div>
-
                             <div class="form-group">
                                     <label for="category_id" class="col-md-4 control-label">Categories*</label>
                                     <div class="col-md-6">
@@ -60,7 +57,6 @@
                                         </select>
                                     </div>
                                 </div>
-
                             <div class="form-group{{ $errors->has('alt_image') ? ' has-error' : '' }}">
                                 <label for="alt_image" class="col-md-6 control-label">Image Alternative Text</label>
                                 <div class="col-md-6">
@@ -98,7 +94,6 @@
                                     </span>
                                 @endif
                             </div>
-
                         </fieldset>
                         <div class="form-group text-center btn-div">
                             <div class="col-sm-12 text-center">
