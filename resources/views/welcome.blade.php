@@ -42,7 +42,7 @@
         <div class="col-md-5 p-0 card shadow">      
           <div class="project-image">
             <a href="#" data-toggle="modal" data-target="#exampleModal1">
-              <img class="project-pic" src="/img/recipes.png" alt="share recipes portfolio project">
+              <img class="project-pic" src="/img/recipes.jpg" alt="share recipes portfolio project">
               <h3 class="project-name text-custom-dark">Share Recipes</h3>
             </a> 
           </div>
@@ -65,7 +65,9 @@
                 <div class="modal-body">
                   <div class="row">
                     <div class="col-5 d-flex justify-content-center flex-column">
-                      <img class="project-pic" src="/img/recipes.png" alt="share recipes project">
+                        <a href="http://share-recipes.epizy.com/" class="text-custom-dark p-3" target="_blank">
+                          <img class="project-pic" src="/img/recipes.jpg" alt="share recipes portfolio project">
+                        </a>
                     </div>
                     <div class="col-md-7">
                       <p class="project-modal-desc text-left">
@@ -90,7 +92,7 @@
         <div class="col-md-5 p-0 card shadow">
             <a href="#" data-toggle="modal" data-target="#exampleModal2">
               <div class="project-image">
-                <img class="project-pic" src="/img/weatherwatcher.png" alt="weather watcher project">
+                <img class="project-pic" src="/img/weatherwatcher.jpg" alt="weather watcher project">
                 <h3 class="project-name">Weather Watcher</h3>
               </div>
             </a> 
@@ -98,8 +100,6 @@
               <p class="p-3">A simple front-end web app for checking the weather. </p>
               <a href="#" data-toggle="modal" data-target="#exampleModal2">More Info</a>
             </div>
-
-  
           </div>
   
           <!-- Modal -->
@@ -115,7 +115,9 @@
                   <div class="modal-body">
                     <div class="row">
                       <div class="col-5 d-flex justify-content-center flex-column">
-                        <img class="project-pic" src="/img/weatherwatcher.png" alt="share recipes project">
+                          <a href="https://twilkinson24.github.io/" class="text-custom-dark p-3" target="_blank">
+                            <img class="project-pic" src="/img/weatherwatcher.jpg" alt="weather watcher portfolio project">
+                          </a>
                       </div>
                       <div class="col-md-7">
                         <p class="project-modal-desc text-left">
@@ -127,7 +129,7 @@
                       </div>
                     </div>
                     <a href="https://github.com/twilkinson24/twilkinson24.github.io" class="text-custom-dark p-3" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://twilkinson24.github.io/" class="text-custom-dark p-3">See it live!</a>
+                    <a href="https://twilkinson24.github.io/" class="text-custom-dark p-3" target="_blank">See it live!</a>
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
