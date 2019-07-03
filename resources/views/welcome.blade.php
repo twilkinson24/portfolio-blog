@@ -42,7 +42,7 @@
         <div class="col-md-5 p-0 card shadow">      
           <div class="project-image">
             <a href="#" data-toggle="modal" data-target="#exampleModal1">
-              <img class="project-pic" src="/img/recipes.png" alt="share recipes project">
+              <img class="project-pic" src="/img/recipes.png" alt="share recipes portfolio project">
               <h3 class="project-name text-custom-dark">Share Recipes</h3>
             </a> 
           </div>
@@ -76,8 +76,8 @@
                       </p>
                     </div>
                   </div>
-                  <a href="https://github.com/twilkinson24/" class="text-custom-dark p-3" target="_blank"><i class="fab fa-github"></i></a>
-                  <a href="#" class="text-custom-dark p-3">See it live</a>
+                  <a href="https://github.com/twilkinson24/share-recipes" class="text-custom-dark p-3" target="_blank"><i class="fab fa-github"></i></a>
+                  <a href="http://share-recipes.epizy.com/" class="text-custom-dark p-3" target="_blank">See it live!</a>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -126,8 +126,8 @@
                         </p>
                       </div>
                     </div>
-                    <a href="https://github.com/coding4tacos/" class="text-custom-dark p-3" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="#" class="text-custom-dark p-3">See it live</a>
+                    <a href="https://github.com/twilkinson24/twilkinson24.github.io" class="text-custom-dark p-3" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://twilkinson24.github.io/" class="text-custom-dark p-3">See it live!</a>
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
