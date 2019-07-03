@@ -22,6 +22,28 @@
   <link href="/css/main.css" rel="stylesheet" type="text/css">
   <link rel="icon" href="./favicon.ico"> <!-- TAB ICON -->
 
+  <!-- Cookie Consent --><!--
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+  <script>
+  window.addEventListener("load", function(){
+  window.cookieconsent.initialise({
+    "palette": {
+      "popup": {
+        "background": "#f8f9fa"
+      },
+      "button": {
+        "background": "#020942"
+      }
+    },
+    "position": "bottom-right",
+    "content": {
+      "href": "https://twilkinson.com/cookiepolicy"
+    }
+  })});
+  </script>-->
+
+
 </head>
 <body>
   <!--header-->
