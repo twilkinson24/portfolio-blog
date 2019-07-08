@@ -44,5 +44,27 @@ $(document).ready(function () {
                     }
                }
           });
+
+     $('#enlanguage').click(function (e) {
+          var form = $('#form-detail');
+          var url = '/setlanguage/en';
+          var data = form.serialize();
+          $.post(url, data, function (result) {
+               location.reload(true);
+          }).fail(function () {
+               alert('Error changing language');
+          });
+     });
+
+     $('#eslanguage').click(function (e) {
+          var form = $('#form-detail');
+          var url = '/setlanguage/es';
+          var data = form.serialize();
+          $.post(url, data, function (result) {
+               location.reload(true);
+          }).fail(function () {
+               alert('Error changing language');
+          });
+     });
 });
 

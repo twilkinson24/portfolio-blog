@@ -13,9 +13,9 @@
 
 Auth::routes();
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', ['uses' => 'WelcomeController@index', 'as' => 'welcome.setIndex']);
+
+Route::post('/setlanguage/{id}', ['uses' => 'WelcomeController@setlanguage', 'as' => 'welcome.setLangauge']);
 
 Route::get('/welcome', function () {
     return view('welcome');

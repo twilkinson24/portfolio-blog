@@ -3,15 +3,31 @@
 @section('title', 'Web Developer')
 @section('description', 'Taylor Wilkinson, web developer')
 @section('content')
+
+<!-- THIS https://www.youtube.com/watch?v=6g8G3YQtQt4 -->
     
   <!--/ header-->
+  <div class="container">
+    @if (Auth::guest())
+    <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">@lang('message.language')<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <form id="form-detail" class="form-horizontal" role="form" method="POST" action="{{ route('/') }}" enctype="multipart/form-data">
+                {{ csrf_field() }}
+                <li id="enlanguage" class="pointer">EN</li>
+                <li id="eslanguage" class="pointer">ES</li>
+            </form>
+        </ul>
+    </li>
+    @endif
+  </div>
   <section class="jumbotron rounded-0 mb-0 text-center">
     <div class="container">
       <h1 class="jumbotron-heading text-custom-dark" id="welcome-name">Taylor Wilkinson</h1>
-      <p class="mx-auto">Passionate web developer looking for opportunities in Michigan or Remote to gain experience and collaborate with awesome people.</p>
+      <p class="mx-auto">@lang('message.welcome-pg-description')</p>
       <div class="jumbo-btns">
-        <a href="#projects" class="btn btn-custom shadow-sm text-custom-dark border my-2">My Work</a>
-        <a href="/contact" class="btn btn-custom shadow-sm text-custom-dark border my-2">Get In Touch</a>
+        <a href="#projects" class="btn btn-custom shadow-sm text-custom-dark border my-2">@lang('message.my-work-btn')</a>
+        <a href="/contact" class="btn btn-custom shadow-sm text-custom-dark border my-2">@lang('message.contact-me-btn')</a>
       </div>
       <ul class="social-icons d-flex justify-content-around mx-auto py-3">
           <li>
