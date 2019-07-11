@@ -58,9 +58,8 @@ class ArticleController extends Controller {
             flash('Post successfully added.', 'success');
             return redirect()->route('articles.main');   
         } catch (\Exception $e) {
-            echo $e;
-            // flash('Error. Post not created.', 'danger');
-            // return redirect()->route('articles.main');        
+            flash('Error. Post not created.', 'danger');
+            return redirect()->route('articles.main');        
         }
      }
     public function show($id) {
