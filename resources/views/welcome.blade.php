@@ -153,13 +153,110 @@
                 </div>
               </div>
             </div>
-          
-          <!-- New Card --><!--
-          <div class="col-md-5 card shadow">
-            hhh
-          </div> -->
+        
       </div> <!-- End row -->
-    </div>
+
+      <div class="row d-flex flex-column flex-md-row justify-content-around text-center" id="project-cards">
+        <!-- New Card -->
+        <div class="col-md-5 p-0 card shadow">
+          <a href="#" data-toggle="modal" data-target="#exampleModal3">
+            <div class="project-image">
+              <img class="project-pic" src="./img/landing.jpg" alt="static page template project">
+              <h3 class="project-name">Static Page Template</h3>
+            </div>
+          </a> 
+          <div class="project-description">
+            <p class="p-3">A PSD to code challenge to myself.</p>
+            <a href="#" data-toggle="modal" data-target="#exampleModal3">More Info</a>
+          </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Static Page Template</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-5 d-flex justify-content-center flex-column">
+                        <a href="https://twilkinson24.github.io/landing-page-practice/" class="text-custom-dark p-3" target="_blank">
+                          <img class="project-pic" src="./img/landing.jpg" alt="psd to code portfolio project">
+                        </a>
+                    </div>
+                    <div class="col-md-7">
+                      <p class="project-modal-desc text-left">
+                          This was a challenge to myself to quickly convert a design to code. Apart from responsive design, it was also good jQuery practice for me.
+                      </p>
+                      <p class="tech-used-modal text-left">
+                        <span class="font-weight-bold">Tools:</span> HTML, CSS, jQuery
+                      </p>
+                    </div>
+                  </div>
+                  <a href="https://github.com/twilkinson24/landing-page-practice" class="text-custom-dark p-3" target="_blank"><i class="fab fa-github"></i></a>
+                  <a href="https://twilkinson24.github.io/landing-page-practice/" class="text-custom-dark p-3" target="_blank">See it live!</a>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+           <!-- New Card -->
+        <div class="col-md-5 p-0 card shadow">
+          <a href="#" data-toggle="modal" data-target="#exampleModal4">
+            <div class="project-image">
+              <img class="project-pic" src="./img/wpsite.jpg" alt="WordPress website project">
+              <h3 class="project-name">WordPress Website/Theme</h3>
+            </div>
+          </a> 
+          <div class="project-description">
+            <p class="p-3">A WordPress website I am building for a travel blog.</p>
+            <a href="#" data-toggle="modal" data-target="#exampleModal4">More Info</a>
+          </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">WordPress Website/Theme</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-5 d-flex justify-content-center flex-column">
+                        <a href="https://github.com/twilkinson24/wp-travel-site" class="text-custom-dark p-3" target="_blank">
+                          <img class="project-pic" src="./img/landing.jpg" alt="psd to code portfolio project">
+                        </a>
+                    </div>
+                    <div class="col-md-7">
+                      <p class="project-modal-desc text-left">
+                          *This project is not quite finished.
+
+                          A website/WordPress theme I am building for an existing travel blog. I have a lot of experience with WordPress, but this will be the most complete theme I have built. This project has taught me a lot about working with PHP to create and alter themes and page templates.
+                      </p>
+                      <p class="tech-used-modal text-left">
+                        <span class="font-weight-bold">Tools:</span> HTML, CSS, Flexbox, JavaScript, PHP, WordPress
+                      </p>
+                    </div>
+                  </div>
+                  <a href="https://github.com/twilkinson24/wp-travel-site" class="text-custom-dark p-3" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div><!-- End Row -->
   </section>
   <!-- ABOUT ME -->
   <section class="about-me" id="about-me">

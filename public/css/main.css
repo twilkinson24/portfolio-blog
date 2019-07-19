@@ -242,6 +242,11 @@ section.projects,
 section.about-me {
      padding: 10rem 0;
 }
+@media only screen and (min-width: 768px) {
+     .projects .row {
+          padding-bottom: 3rem;
+     }
+}
 
 .projects a h3 {
      font-family: 'Kalam', Helvetica, sans-serif;
